@@ -7,6 +7,7 @@ const App = () => {
     
     return (
         <Router>
+           
             <Switch> 
                 <Route path="/games" component={Games}/>
                 <Route path="/susadventure" component={SusAdventure}/>

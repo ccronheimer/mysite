@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from '@material-ui/core';
 
 const susadventure = () => {
     function getMobileOperatingSystem(){
@@ -28,16 +29,17 @@ const susadventure = () => {
         } else if (os === "iOS") {
             window.location.href = "https://apps.apple.com/us/app/sus-adventure-2/id1564807026";
         } else if (os === "Windows Phone") {
-            window.location.href = "http://cameroncronheimer.com/games";
+          //  window.location.href = "http://cameroncronheimer.com/games";
         } else {
-            window.location.href = "http://cameroncronheimer.com/games";
+            //window.location.href = "http://cameroncronheimer.com/games";
         }
     }
         
         return (
-            <>
+            <div>
                 {DetectAndServe()}
-            </>
+                <Typography>Thank you for downloading ❤️ </Typography>
+            </div>
         )
     }
 

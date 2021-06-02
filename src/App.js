@@ -25,9 +25,9 @@ function getMobileOperatingSystem(){
 function DetectAndServe(){
     let os = getMobileOperatingSystem();
     if (os === "Android") {
-        window.location.href = "http://www.Androidexample.com"; 
+        window.location.href = "https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure"; 
     } else if (os === "iOS") {
-        window.location.href = "http://www.IOSexample.com";
+        window.location.href = "https://apps.apple.com/us/app/sus-adventure-2/id1564807026";
     } else if (os === "Windows Phone") {
         window.location.href = "http://www.WindowsPhoneexample.com";
     } else {

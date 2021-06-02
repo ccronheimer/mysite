@@ -1,23 +1,18 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import susadventure from './susadventure';
-
+import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import SusAdventure from "./components/SusAdventure";
+import Home from "./components/Home";
+import Games from "./components/Games";
 const App = () => {
     
-
     return (
         <Router>
-            <div>
-                <Switch>
-                    <Route exact path="/">
-                        cameroncronheimer.com
-                    </Route>
-
-                    <Route exact path="/susadventure">
-                        <susadventure/>
-                    </Route>
-                </Switch>
-            </div>
+            <Switch> 
+                <Route path="/games" component={Games}/>
+                <Route path="/susadventure" component={SusAdventure}/>
+                <Route path="/" component={Home}/>
+            </Switch>
+          
         </Router>
     )
 }

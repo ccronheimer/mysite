@@ -28,9 +28,9 @@ const susadventure = () => {
         } else if (os === "iOS") {
             window.location.href = "https://apps.apple.com/us/app/sus-adventure-2/id1564807026";
         } else if (os === "Windows Phone") {
-            window.location.href = "http://www.WindowsPhoneexample.com";
+            window.location.href = "http://cameroncronheimer.com/games";
         } else {
-            window.location.href = "http://www.NowherLandexample.com";
+            window.location.href = "http://cameroncronheimer.com/games";
         }
     }
         

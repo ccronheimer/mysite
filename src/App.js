@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import SusAdventure from "./components/SusAdventure";
 import Home from "./components/Home";
 import Games from "./components/Games";
-import Privacy from './components/privacy';
+import Privacy from './components/Privacy';
 
 const App = () => {
     

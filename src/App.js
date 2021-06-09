@@ -12,8 +12,9 @@ const App = () => {
            
             <Switch> 
                 <Route path="/games" component={Games}/>
-                <Route path="/susadventure" component={SusAdventure}/>
                 <Route path="/susadventure/privacy" component={Privacy}/>
+                <Route path="/susadventure" component={SusAdventure}/>
+                
                 <Route path="/" component={Home}/>
             </Switch>
           

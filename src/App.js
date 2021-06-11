@@ -3,8 +3,8 @@ import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import SusAdventure from "./components/SusAdventure";
 import Home from "./components/Home";
 import Games from "./components/Games";
-import Privacy from './components/Privacy';
-
+import PrivacySus from './components/PrivacySus';
+import PrivacyColoring from './components/PrivacyColoring';
 const App = () => {
     
     return (
@@ -12,9 +12,9 @@ const App = () => {
            
             <Switch> 
                 <Route path="/games" component={Games}/>
-                <Route path="/susadventure/privacy" component={Privacy}/>
+                <Route path="/susadventure/privacy" component={PrivacySus}/>
+                <Route path="/coloringasmr/privacy" component={PrivacyColoring}/>
                 <Route path="/susadventure" component={SusAdventure}/>
-                
                 <Route path="/" component={Home}/>
             </Switch>
           

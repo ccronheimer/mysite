@@ -8,7 +8,7 @@ const Home = () => {
   return(
        <>
       <Text>Cameron Cronheimer</Text>
-      <video width="320" autoPlay muted loop>
+      <video width="320" autoPlay muted loop playsInline>
           <source src={Car} type="video/mp4"/>
       </video>
        </>

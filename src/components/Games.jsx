@@ -4,6 +4,7 @@ import susicon from '../assets/susicon.svg';
 import playstoreicon from '../assets/playstoreicon.png';
 import styled from "styled-components";
 
+
 const SusIcon = styled.div`
     display: flex;
     justify-content: center;

@@ -1,11 +1,22 @@
 import { createGlobalStyle } from 'styled-components';
-import SFProRoundedWoff2 from './SF-Pro-Rounded-Regular.woff2';
+import SFProRounded from './SF-Pro-Rounded-Regular.woff2';
+import SFProRoundedSemiBold from './SF-Pro-Rounded-Semibold.woff2';
+import SFProRoundedBold from './SF-Pro-Rounded-Bold.woff2';
 
 export default createGlobalStyle`
     @font-face {
         font-family: 'SF Pro Rounded';
-        src: local('SF Pro Rounded'), local('SF-Pro-Rounded-Regular.woff2'),
-        url(${SFProRoundedWoff2}) format('woff2');
-        
+        src: url(${SFProRounded}) format('woff2');
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SF Pro Rounded Bold';
+        src: url(${SFProRoundedBold}) format('woff2');
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SF Pro Rounded SemiBold';
+        src: url(${SFProRoundedSemiBold}) format('woff2');
+        font-style: normal;
     }
 `;

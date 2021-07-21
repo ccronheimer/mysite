@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Games from "./components/Games";
 import PrivacySus from './components/PrivacySus';
 import PrivacyColoring from './components/PrivacyColoring';
+import styled from "styled-components";
 
 const App = () => {
     
@@ -27,3 +28,4 @@ const App = () => {
 }
 
 export default App
+

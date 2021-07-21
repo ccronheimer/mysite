@@ -1,19 +1,24 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-
-
-const Text = styled.div`
-   font-family: 'SF Pro Rounded';
-   font-size: 30px;
-  
-`;
+import Car from "../video/s.mp4"
 
 const Home = () => {
-    return (
-        <Text>
-            Cameron Cronheimer
-        </Text>
-    )
-}
+    const videoSrc = Car;
+    
+  return(
+       <>
+      <Text>Cameron Cronheimer</Text>
+      <video width="320" autoPlay muted loop>
+          <source src={Car} type="video/mp4"/>
+      </video>
+       </>
+  ) 
+};
 
-export default Home
+export default Home;
+
+const Text = styled.div`
+  font-family: "SF Pro Rounded SemiBold";
+  font-size: 24px;
+  font-weight: 100px;
+`;

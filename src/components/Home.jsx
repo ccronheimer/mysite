@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Car from "../video/s.mp4";
+import NavBar from "./NavBar";
 
 const Home = () => {
   return (
     <>
-      <Text>Cameron Cronheimer</Text>
+    <NavBar />
        
        <WelcomeView>Hey I'm Cameron 👋🏼</WelcomeView>
        <DescriptText>Software Developer 📱</DescriptText>
@@ -27,6 +28,12 @@ const Home = () => {
 
 export default Home;
 
+const NavLinks = styled.ul`
+
+`;
+const li2 = styled.li`
+
+`;
 const WelcomeView = styled.div`
 
 text-align: center;

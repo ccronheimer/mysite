@@ -1,37 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import Car from "../video/s.mp4"
+import Car from "../video/s.mp4";
 
 const Home = () => {
-    const videoSrc = Car;
-    
-  return(
-       <>
+  return (
+    <>
       <Text>Cameron Cronheimer</Text>
 
-      <VidCard> 
-      <video width="320" autoPlay muted loop playsInline>
-          <source src={Car} type="video/mp4"/>
-      </video>
-      </VidCard>
-     
-       </>
-  ) 
+      <Container>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
+
+      </Container>
+    </>
+  );
 };
 
 export default Home;
 
+const Container = styled.div`
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    background-color: red;
+    justify-content: center;
+    
+    
+`;
+const VideoCard = styled.div`
+    padding: 10px;
+    margin: 10px;
+
+`;
 const Text = styled.div`
   font-family: "SF Pro Rounded SemiBold";
   font-size: 24px;
   font-weight: 100px;
-`;
-
-const VidCard = styled.div`
-  border-radius: 22px;
-overflow: hidden;
--webkit-transform: translateZ(0);
-box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
- width: 320px;
-
 `;

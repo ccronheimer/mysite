@@ -12,15 +12,7 @@ const Home = () => {
        <DescriptText>Software Developer 📱</DescriptText>
         <CheckOutMyProjectsView>Check out my projects👇🏼</CheckOutMyProjectsView>
       <Container>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-      <VideoCard><video width="250" autoPlay muted loop playsInline><source src={Car} type="video/mp4" /></video></VideoCard>
-
+      
       </Container>
     </>
   );

@@ -12,8 +12,9 @@ import styled from "styled-components";
 const App = () => {
     
     return (
-        <Router>
         <>
+        <Router>
+        
             <Switch> 
                 <Route path="/games" component={Games}/>
                 <Route path="/susadventure/privacy" component={PrivacySus}/>
@@ -22,8 +23,9 @@ const App = () => {
                 <Route path="/" component={Home}/>
             </Switch>
             <GlobalFonts />
-          </>
+          
         </Router>
+        </>
     )
 }
 

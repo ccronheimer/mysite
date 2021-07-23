@@ -14,7 +14,7 @@ const Home = () => {
           I'm <span style={{fontWeight: "bold"}}>Cameron Cronheimer</span>, a software engineer from 🇨🇦 focused on
           building mobile/web apps 👨🏻‍💻
         </IntroTagLine>
-        <IntroContact>Get in touch 👉 <Email>cameroncronheimer@gmail.com</Email></IntroContact>
+        <IntroContact>Get in touch 👉 <Email href="mailto:cameroncronheimer@gmail.com">cameroncronheimer@gmail.com</Email></IntroContact>
       </Intro>
       <Projects />
     </>
@@ -43,10 +43,21 @@ const IntroHello = styled.h1`
     font-size: 1.5rem;
   }
 `;
-const Email = styled.span`
-text-decoration: underline #316DCA;
-text-decoration-thickness: 3px;
-text-underline-offset: 4px;
+const Email = styled.a`
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff;
+    color: white;
+
+  &:hover {
+    box-shadow: inset 0 -33px 0 0 #007bff;
+    color: #fff;
+}
 `;
 const IntroTagLine = styled.h2`
   font-weight: 300;
@@ -88,13 +99,13 @@ const IntroContact = styled.h3`
 
 const Intro = styled.header`
   padding: 120px 100px;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: 1436px;
   margin: 0 auto;
-  background-color: #18191a;
+  
 
   @media screen and (max-width: 630px) {
     padding: 120px 70px;
@@ -103,6 +114,6 @@ const Intro = styled.header`
     padding: 120px 50px;
   }
   @media screen and (max-width: 480px) {
-    padding: 70px 50px;
+    padding: 30px 50px;
   }
 `;

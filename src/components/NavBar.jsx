@@ -7,16 +7,23 @@ const NavBar = () => {
       <Nav>
         <Left/>
         <Right>
-          <Resume>Resume</Resume>
+          <Resume href="#">Resume</Resume>
         </Right>
       </Nav>
     </>
   );
 };
 
-const Resume = styled.div`
-  padding-right: 20px;
+const Resume = styled.a`
+  margin-right: 20px;
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform .1s ease-in-out; /* Animation */
+  &:hover {
+    transform: scale(1.1);
+  }
+  
 `;
 const Nav = styled.nav`
   height: 80px;
@@ -25,6 +32,7 @@ const Nav = styled.nav`
   align-items: center;
   margin-right: 20px;
   margin-left: 20px;
+  
   
 `;
 

@@ -4,12 +4,13 @@ import Car from "../video/s.mp4";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 
+/* Futura, Helvetica */
 const Home = () => {
   return (
     <>
       <NavBar />
       <Intro>
-        <IntroHello>Hello! 👋</IntroHello>
+        <IntroHello>Hey! 👋</IntroHello>
         <IntroTagLine>
           I'm <span style={{fontWeight: "bold"}}>Cameron Cronheimer</span>, a software engineer from 🇨🇦 focused on
           building mobile/web apps 👨🏻‍💻

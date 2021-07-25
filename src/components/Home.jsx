@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Car from "../video/s.mp4";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 

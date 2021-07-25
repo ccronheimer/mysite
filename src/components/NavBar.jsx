@@ -13,10 +13,10 @@ const NavBar = () => {
               <Resume>Resume</Resume>
           </Icon>
           <Icon href="https://github.com/ccronheimer" target="_blank">
-           <FaGithub size="3em" color="white"/>
+           <FaGithub size="2em" color="white"/>
           </Icon>
           <Icon href="https://www.linkedin.com/in/cameron-cronheimer-ab3a47165/" target="_blank">
-           <FaLinkedin size="3em" color="white"/>
+           <FaLinkedin size="2em" color="white"/>
           </Icon>
         </Right>
       </Nav>

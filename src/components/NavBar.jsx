@@ -25,7 +25,7 @@ const NavBar = () => {
 };
 
 const Icon = styled.a`
-    margin: 20px;
+    margin: 12px;
     display: inline-flex; /* makes a tag size of image */
     transition: transform .1s ease-in-out; /* Animation */
     text-decoration: none;

@@ -32,6 +32,7 @@ const IntroHello = styled.h1`
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: white;
+  font-family: "SF Pro Rounded";
 
   @media screen and (max-width: 1024px) {
     font-size: 2.25rem;
@@ -53,6 +54,7 @@ const Email = styled.a`
     -webkit-box-shadow: inset 0 -3px 0 #007bff;
     box-shadow: inset 0 -3px 0 #007bff;
     color: white;
+    font-family: "SF Pro Rounded";
 
   &:hover {
     box-shadow: inset 0 -33px 0 0 #007bff;
@@ -69,7 +71,8 @@ const IntroTagLine = styled.h2`
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: white;
-  
+  font-family: "SF Pro Rounded";
+
   @media screen and (max-width: 1024px) {
     font-size: 2.25rem;
   }
@@ -90,7 +93,7 @@ const IntroContact = styled.h3`
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: white;
-
+  font-family: "SF Pro Rounded";
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }

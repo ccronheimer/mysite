@@ -7,43 +7,48 @@ import Projects from "./Projects";
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <Intro>
-        <IntroHello>Hey! 👋</IntroHello>
+<NavBar />
+<IntroContainer>
+
+<Intro>
         <IntroTagLine>
-          I'm <span style={{fontWeight: "bold"}}>Cameron Cronheimer</span>, a software engineer from 🇨🇦 focused on
-          building mobile/web apps 👨🏻‍💻
+         <span style={{fontFamily: "Helvetica Neue Bold"}}>Cameron Cronheimer</span>
+         <br/><span style={{fontFamily: "Helvetica Neue", fontSize: "1rem", fontWeight: "lighter"}}>Software Developer 🛠</span> 
         </IntroTagLine>
         <IntroContact>Get in touch 👉 <Email href="mailto:cameroncronheimer@gmail.com">cameroncronheimer@gmail.com</Email></IntroContact>
+       
       </Intro>
-      <Projects />
+      
+</IntroContainer>
+            <MyProjectsText>Projects<br/>👇</MyProjectsText>
+
     </>
   );
 };
 
 export default Home;
 
-const IntroHello = styled.h1`
-  font-weight: 300;
-  font-size: 2.5rem;
-  display: block;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  color: white;
-  font-family: "SF Pro Rounded";
+const IntroContainer = styled.div`
+ padding: 50px 100px;
+ height: 60vh;/* vh means 60% viewable height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 920px;
+  margin: 0 auto;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 2.25rem;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
+  @media screen and (max-width: 630px) {
+    padding: 100px 70px;
   }
   @media screen and (max-width: 550px) {
-    font-size: 1.5rem;
+    padding: 100px 50px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 100px 50px;
+    height: 40vh;/* vh means 60% viewable height */
   }
 `;
+
 const Email = styled.a`
     transition: all .2s ease-in-out;
     font-weight: 400;
@@ -54,25 +59,29 @@ const Email = styled.a`
     -webkit-box-shadow: inset 0 -3px 0 #007bff;
     box-shadow: inset 0 -3px 0 #007bff;
     color: white;
-    font-family: "SF Pro Rounded";
+    font-family: "SF Mono";
 
   &:hover {
     box-shadow: inset 0 -33px 0 0 #007bff;
     color: #fff;
 }
 `;
-const IntroTagLine = styled.h2`
-  font-weight: 300;
+const MyProjectsText = styled.h3`
+ color: white;
+ text-align: center;
+ margin: 0 auto;
+ line-height: 1.5;
+font-size: 20px;
+font-family: "Helvetica Neue";
+
+`;
+
+const IntroTagLine = styled.h1`
   max-width: 700px;
   display: block;
   font-size: 2.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   color: white;
-  font-family: "SF Pro Rounded";
-
+  line-height: 1;
   @media screen and (max-width: 1024px) {
     font-size: 2.25rem;
   }
@@ -84,16 +93,13 @@ const IntroTagLine = styled.h2`
   }
 `;
 
-const IntroContact = styled.h3`
+const IntroContact = styled.h2`
   font-size: 1.25rem;
   font-weight: 400;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+ 
   color: white;
-  font-family: "SF Pro Rounded";
+  font-family: "Helvetica Neue";
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }
@@ -101,22 +107,9 @@ const IntroContact = styled.h3`
 `;
 
 const Intro = styled.header`
-  padding: 120px 100px;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 1436px;
-  margin: 0 auto;
+  height: 40vh;
   
-
-  @media screen and (max-width: 630px) {
-    padding: 120px 70px;
-  }
-  @media screen and (max-width: 550px) {
-    padding: 120px 50px;
-  }
-  @media screen and (max-width: 480px) {
-    padding: 30px 50px;
-  }
 `;

@@ -45,7 +45,7 @@ const Home = () => {
           <Skills>
             <SkillsCategory>
               <SkillsCategoryLabel>Langauges</SkillsCategoryLabel>
-              <ul>
+              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
@@ -53,7 +53,8 @@ const Home = () => {
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Frameworks</SkillsCategoryLabel>
-              <ul>
+              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
@@ -61,7 +62,8 @@ const Home = () => {
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Tools</SkillsCategoryLabel>
-              <ul>
+              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
@@ -69,7 +71,8 @@ const Home = () => {
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Design</SkillsCategoryLabel>
-              <ul>
+              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
@@ -174,7 +177,7 @@ export default Home;
 const FooterLink = styled.div`
   position: relative;
   display: inline-block;
-  color: #007cff !important;
+  color: #057bf7 !important;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 15px;
@@ -251,8 +254,8 @@ const TechItem = styled.span`
   font-weight: 700;
   padding: 2px 7px;
   border-radius: 3px;
-  color: #007cff;
-  border: 1px solid #007cff;
+  color: #057bf7;
+  border: 1px solid #057bf7;
   background: 0 0;
 `;
 const TechUsed = styled.div``;
@@ -491,7 +494,8 @@ const SectionContent = styled.div`
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
   box-sizing: border-box;
-
+  
+  /* Change fontweight to 700 for bold */
   @media screen and (max-width: 768px) {
     padding-top: 30px;
     padding-left: 50px;
@@ -505,7 +509,7 @@ const SectionTitle = styled.div`
   width: 200px;
   margin-right: 70px;
   /* color: #007bff; */
-  color: #007cff;
+  color: #057bf7;
   text-transform: uppercase;
   text-align: right;
   font-weight: 700;
@@ -579,13 +583,13 @@ const Email = styled.a`
   display: inline-block;
   padding: 2px 3px;
   text-decoration: none;
-  -webkit-box-shadow: inset 0 -3px 0 #007cff;
-  box-shadow: inset 0 -3px 0 #007cff;
-  color: white;
+  -webkit-box-shadow: inset 0 -3px 0 #057bf7;
+  box-shadow: inset 0 -3px 0 #057bf7;
+  color: #f5f5f7;
   font-family: "SF Mono";
 
   &:hover {
-    box-shadow: inset 0 -33px 0 0 #007cff;
+    box-shadow: inset 0 -33px 0 0 #057bf7;
     color: #fff;
   }
 `;

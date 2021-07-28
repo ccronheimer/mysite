@@ -32,10 +32,7 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          I'm currently an Engineer at Upstatement building things for the web
-          with some awesome people. I recently graduated from Northeastern
-          University after completing three awesome six-month co-ops at
-          MullenLowe U.S., Starry, and Apple Music.
+          I'm currently a student at Brock University studying Computer Science.
         </SectionContent>
       </SectionBackground>
 

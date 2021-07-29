@@ -32,7 +32,8 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          I'm currently a student at Brock University studying Computer Science.
+          I'm currently a student at <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University </BoldLink>  
+           studying <BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink>.
         </SectionContent>
       </SectionBackground>
 
@@ -46,33 +47,42 @@ const Home = () => {
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
+                <SkillsCategoryItem>C#</SkillsCategoryItem>
+                <SkillsCategoryItem>Python</SkillsCategoryItem>
+                <SkillsCategoryItem>SQL</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Frameworks</SkillsCategoryLabel>
               <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
 
-                <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
-                <SkillsCategoryItem>Swift</SkillsCategoryItem>
-                <SkillsCategoryItem>Java</SkillsCategoryItem>
+                <SkillsCategoryItem>React</SkillsCategoryItem>
+                <SkillsCategoryItem>React-Native</SkillsCategoryItem>
+                <SkillsCategoryItem>SwiftUI</SkillsCategoryItem>
+                <SkillsCategoryItem>Express</SkillsCategoryItem>
+                <SkillsCategoryItem>Styled Components</SkillsCategoryItem>
+
               </ul>
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Tools</SkillsCategoryLabel>
               <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
 
-                <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
-                <SkillsCategoryItem>Swift</SkillsCategoryItem>
-                <SkillsCategoryItem>Java</SkillsCategoryItem>
+                <SkillsCategoryItem>Git & Github</SkillsCategoryItem>
+                <SkillsCategoryItem>Firebase Firestore</SkillsCategoryItem>
+                <SkillsCategoryItem>MongoDB</SkillsCategoryItem>
+                <SkillsCategoryItem>Unity</SkillsCategoryItem>
+                <SkillsCategoryItem>PostreSQL</SkillsCategoryItem>
+                <SkillsCategoryItem>Node</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Design</SkillsCategoryLabel>
               <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+                <SkillsCategoryItem>Figma</SkillsCategoryItem>
+                <SkillsCategoryItem>Blender</SkillsCategoryItem>
+                <SkillsCategoryItem>draw.io</SkillsCategoryItem>
 
-                <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
-                <SkillsCategoryItem>Swift</SkillsCategoryItem>
-                <SkillsCategoryItem>Java</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
           </Skills>
@@ -86,15 +96,11 @@ const Home = () => {
             <Job>
               <TimePlace>
                 <JobCompany>
-                  <a
-                    href="https://github.com/ccronheimer"
-                    target="_blank"
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Galatic Thumb
-                  </a>
+                
+                  <BoldLink href="https://galacticthumb.com/">Galatic Thumb</BoldLink>
+                  
                 </JobCompany>
-                <JobTime>May 2018 - Present</JobTime>
+                <JobTime>May 2019 - June 2020</JobTime>
               </TimePlace>
               <JobPosition>Software Engineer</JobPosition>
             </Job>
@@ -102,7 +108,7 @@ const Home = () => {
           <ArrowLink href="#">
             View My Resume{" "}
             <FaArrowRight
-              style={{ textAlign: "center", verticalAlign: "middle" }}
+              style={{ textAlign: "center", verticalAlign: "middle", color: "#057bf7"}}
             />
           </ArrowLink>
         </SectionContent>
@@ -171,6 +177,12 @@ const Home = () => {
 
 export default Home;
 
+const BoldLink = styled.a`
+   text-decoration: none;
+   color: white;
+   font-family: "Helvetica Neue Bold";
+   
+`;
 const FooterLink = styled.div`
   position: relative;
   display: inline-block;
@@ -366,26 +378,33 @@ const ArrowLink = styled.a`
   white-space: nowrap;
   font-size: 1.25rem;
   text-decoration: none;
-  color: white;
+  color: #f5f5f7;
 `;
 const JobPosition = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: "Helvetica Neue";
   @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 const JobTime = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: "SF Mono";
   margin-top: 3.5px;
+  color: #f5f5f7;
   @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `;
 const JobCompany = styled.div`
-  font-weight: 700;
+  
   text-decoration: none;
-  color: white;
+  font-size: 1.1rem;
+  color: #f5f5f7;
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+
 `;
 const TimePlace = styled.div`
   display: -webkit-box;
@@ -432,11 +451,11 @@ const SkillsCategoryItem = styled.li`
   text-align: -webkit-match-parent;
   margin: 3px 0;
   font-size: 0.9rem;
-  color: white;
+  color: #f5f5f7;
 `;
 const SkillsCategoryLabel = styled.div`
-  font-weight: 700;
-  color: white;
+  font-family: "Helvetica Neue Bold";
+  color: #f5f5f7;
   text-transform: uppercase;
 `;
 const SkillsCategory = styled.div`
@@ -509,7 +528,6 @@ const SectionTitle = styled.div`
   color: #057bf7;
   text-transform: uppercase;
   text-align: right;
-  font-weight: 700;
   letter-spacing: 2px;
   font-family: "Helvetica Neue Bold";
   white-space: nowrap;

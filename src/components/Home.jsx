@@ -32,8 +32,7 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          I'm currently a student at <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University </BoldLink>  
-           studying <BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink>.
+          I am currently studying <BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> at <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink>. I am seeking a software developer internship for summer 2022.
         </SectionContent>
       </SectionBackground>
 
@@ -137,6 +136,28 @@ const Home = () => {
         <SectionTitle>More Projects</SectionTitle>
         <SectionContent>
           <Project>
+            <MoreProjectName>Neural Network</MoreProjectName>
+            <p>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </p>
+            <TechUsed>
+              <TechItem>Java</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
+            <MoreProjectName>Surf</MoreProjectName>
+            <p>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </p>
+            <TechUsed>
+              <TechItem>JavaScript</TechItem>
+              <TechItem>React</TechItem>
+              <TechItem>Axios</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
             <MoreProjectName>Surf</MoreProjectName>
             <p>
               Small React project created during an interview process to browse
@@ -153,10 +174,10 @@ const Home = () => {
       <TheFooter>
         <FooterCopyRight>
           <Top>
-            <span>Designed & Developer by</span>
+            <span>Developed by</span>
           </Top>
           <Bottom>
-            <span>Cameron Cronheimer 🍻 2021</span>
+            <span>Cameron Cronheimer 🇨🇦 2021</span>
           </Bottom>
         </FooterCopyRight>
         <FooterLinks>
@@ -194,6 +215,8 @@ const FooterLink = styled.div`
   text-decoration: none;
 `;
 const FooterLinks = styled.div`
+ font-size: 2em;
+
   @media screen and (max-width: 630px) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,29 +224,36 @@ const FooterLinks = styled.div`
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    font-size: 1.5em;
   }
+
 `;
 const Bottom = styled.div`
   @media screen and (max-width: 630px) {
     display: inline-block;
+    font-size: 0.9em;
   }
   @media screen and (max-width: 480px) {
     display: block;
+    font-size: 0.9em;
   }
 `;
 const Top = styled.div`
   @media screen and (max-width: 630px) {
     display: inline-block;
+    font-size: 0.9em;
+
   }
   @media screen and (max-width: 480px) {
     display: block;
+    font-size: 0.9em;
   }
 `;
 const FooterCopyRight = styled.div`
   font-weight: 700;
   width: 300px;
   font-family: "SF Mono";
-  color: white;
+  color: #f5f5f7;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
   box-sizing: border-box;
@@ -247,6 +277,7 @@ const TheFooter = styled.footer`
 
   @media screen and (max-width: 1024px) {
     padding: 50px;
+    
   }
   @media screen and (max-width: 630px) {
     display: block;
@@ -271,6 +302,15 @@ const TechUsed = styled.div``;
 
 const ProjectName = styled.div`
   margin-bottom: 10px;
+  font-family: "Helvetica Neue Bold";
+  color: #f5f5f7;
+  font-size: 1.1em;
+  @media screen and (max-width: 630px) {
+    display: block;
+    font-size: 1em;
+
+  }
+  
 `;
 const Project = styled.div`
   max-width: 600px;
@@ -301,6 +341,15 @@ const OtherProjects = styled.section`
 const MoreProjectName = styled.div`
   margin-bottom: 10px;
   display: block;
+
+  font-family: "Helvetica Neue Bold";
+  color: #f5f5f7;
+  font-size: 1.1em;
+  @media screen and (max-width: 630px) {
+    display: block;
+    font-size: 1em;
+
+  }
 `;
 const ProjectCaption = styled.figcaption`
   width: 200px;
@@ -372,13 +421,16 @@ const FeaturedProjects = styled.section`
 const ArrowLink = styled.a`
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-weight: 700;
+  font-family: "Helvetica Neue Bold";
   display: inline-block;
   background-color: transparent;
   white-space: nowrap;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #f5f5f7;
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 const JobPosition = styled.div`
   font-size: 1rem;
@@ -388,7 +440,7 @@ const JobPosition = styled.div`
   }
 `;
 const JobTime = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-family: "SF Mono";
   margin-top: 3.5px;
   color: #f5f5f7;

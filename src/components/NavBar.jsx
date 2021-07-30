@@ -23,32 +23,36 @@ const NavBar = () => {
 };
 
 const Button = styled.a`
-
-    text-decoration: none;
-    
+ text-decoration: none;
  background-color: #057bf7; /* Green */
   border: none;
   color: white;
-  padding-inline: 20px;
-  padding-block: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 20px;
   font-family: "Helvetica Neue Bold";
- 
-box-shadow:
-  0 100px 80px rgba(5, 123, 247, 0.07),
-  0 41.7px 33.4px rgba(5, 123, 247, 0.05),
-  0 22.3px 17px rgba(5, 123, 247, 0.04),
-  0 12.5px 10px rgba(5, 123, 247, 0.035),
-  0 6.65px 5.3px rgba(5, 123, 247, 0.028),
-  0 2.7px 2.2px rgba(5, 123, 247, 0.019)
-;
+  padding-inline: 14px;
+    padding-block: 8px;
+    font-size: 0.8em;
+    margin-right: 6px;
 
-
+  @media screen and (max-width: 1024px) {
+    padding-inline: 14px;
+    padding-block: 8px;
+    font-size: 0.8em;
+  }
+  @media screen and (max-width: 768px) {
+    padding-inline: 14px;
+    padding-block: 8px;
+    font-size: 0.8em;
+  }
+  @media screen and (max-width: 550px) {
+    padding-inline: 14px;
+    padding-block: 8px;
+    font-size: 0.8em;
+  }
 `;
 const Icon = styled.a`
   /* em means 2x relative to this font */

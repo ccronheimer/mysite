@@ -19,10 +19,13 @@ const Home = () => {
           <IntroTagLine>
             Cameron Cronheimer
             <br />
-            <SoftwareDeveloperText>Software Developer</SoftwareDeveloperText>
+            <SoftwareDeveloperText><SecondaryText>Software Developer</SecondaryText></SoftwareDeveloperText>
           </IntroTagLine>
           <IntroContact>
-            Get in touch 👉{" "}
+          <SecondaryText>
+            Get in touch 
+            </SecondaryText>
+            {" "}👉{" "}
             <Email href="mailto:cameroncronheimer@gmail.com">
               cameroncronheimer@gmail.com
             </Email>
@@ -32,7 +35,7 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          I am currently studying <BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> at <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink>. I am seeking a software developer internship for summer 2022.
+          <SecondaryText>I am currently studying </SecondaryText><BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> <SecondaryText>at</SecondaryText>  <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink><SecondaryText>. I am seeking a software developer internship for spring 2022.</SecondaryText>
         </SectionContent>
       </SectionBackground>
 
@@ -645,19 +648,20 @@ const IntroContainer = styled.div`
 
 const Email = styled.a`
   transition: all 0.2s ease-in-out;
-  font-weight: 400;
+  font-weight: 900;
   text-decoration: none;
   display: inline-block;
   padding: 2px 3px;
   text-decoration: none;
-  -webkit-box-shadow: inset 0 -3px 0 #057bf7;
-  box-shadow: inset 0 -3px 0 #057bf7;
-  color: #f5f5f7;
+  -webkit-box-shadow: inset 0px -4px 0 #057bf7;
+  box-shadow: inset 0px -4px 0px #057bf7;
+  padding-bottom: 6px;
+  color: white;
   font-family: "SF Mono";
-
+  
   &:hover {
     box-shadow: inset 0 -33px 0 0 #057bf7;
-    color: #fff;
+    
   }
 `;
 
@@ -667,6 +671,7 @@ const IntroTagLine = styled.h1`
   font-size: 2.3em;
   color: #f5f5f7;
   line-height: 1.2;
+  
   font-family: "Helvetica Neue Bold";
   @media screen and (max-width: 1024px) {
     font-size: 2.2rem;
@@ -681,16 +686,19 @@ const IntroTagLine = styled.h1`
 
 const IntroContact = styled.h2`
   font-size: 1.25rem;
-  font-weight: 400;
   display: block;
-
-  color: #f5f5f7;
+  font-weight: 400;
+  color: white;
+  
   font-family: "Helvetica Neue";
+
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }
 `;
-
+const SecondaryText = styled.span`
+  opacity: 87%;
+`;
 const Intro = styled.header`
   display: flex;
   flex-direction: column;

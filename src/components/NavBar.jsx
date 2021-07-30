@@ -14,15 +14,7 @@ const NavBar = () => {
           </Icon>
         </Left>
         <Right>
-          <Icon href="#" target="_blank">
-              <Resume>Resume</Resume>
-          </Icon>
-          <Icon href="https://github.com/ccronheimer" target="_blank">
-           <FaGithub size ="2em"/>
-          </Icon>
-          <Icon href="https://www.linkedin.com/in/cameron-cronheimer-ab3a47165/" target="_blank">
-           <FaLinkedin size="2em"/>
-          </Icon>
+        <Button href="#">Projects</Button>
           
         </Right>
       </Nav>
@@ -30,6 +22,32 @@ const NavBar = () => {
   );
 };
 
+const Button = styled.a`
+-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+ background-color: #057bf7; /* Green */
+  border: none;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: "Helvetica Neue Bold";
+ 
+box-shadow:
+  0 10px 24.3px rgba(5, 123, 247, 0.04),
+  0 33.7px 81.5px rgba(5, 123, 247, 0.06),
+  0 151px 365px rgba(5, 123, 247, 0.1)
+;
+
+
+`;
 const Icon = styled.a`
   /* em means 2x relative to this font */
     margin: 20px;

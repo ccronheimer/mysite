@@ -23,10 +23,9 @@ const NavBar = () => {
 };
 
 const Button = styled.a`
--webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+
     text-decoration: none;
+    
  background-color: #057bf7; /* Green */
   border: none;
   color: white;

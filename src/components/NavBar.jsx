@@ -41,9 +41,12 @@ const Button = styled.a`
   font-family: "Helvetica Neue Bold";
  
 box-shadow:
-  0 10px 24.3px rgba(5, 123, 247, 0.04),
-  0 33.7px 81.5px rgba(5, 123, 247, 0.06),
-  0 151px 365px rgba(5, 123, 247, 0.1)
+  0 100px 80px rgba(5, 123, 247, 0.07),
+  0 41.7px 33.4px rgba(5, 123, 247, 0.05),
+  0 22.3px 17px rgba(5, 123, 247, 0.04),
+  0 12.5px 10px rgba(5, 123, 247, 0.035),
+  0 6.65px 5.3px rgba(5, 123, 247, 0.028),
+  0 2.7px 2.2px rgba(5, 123, 247, 0.019)
 ;
 
 

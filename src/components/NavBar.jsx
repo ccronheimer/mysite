@@ -25,7 +25,8 @@ const NavBar = () => {
 const ButtonText = styled.a`
 color: white;
 font-family: "Helvetica Neue Bold";
-font-size: 1em;
+
+
 `;
 const Button = styled.a`
  display: inline-block;
@@ -38,6 +39,18 @@ const Button = styled.a`
     background-color: #057bf7;
     white-space: nowrap;
     text-decoration: none;
+
+    @media screen and (max-width: 1024px) {
+    
+  }
+ 
+  @media screen and (max-width: 550px) {
+    padding-inline: 12px;
+    padding-block: 8px;
+    font-size: 0.85em;
+    margin-right: 10px;
+    
+  }
 
 `;
 const Icon = styled.a`

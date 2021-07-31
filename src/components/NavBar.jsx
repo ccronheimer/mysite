@@ -45,8 +45,7 @@ const Button = styled.a`
   }
  
   @media screen and (max-width: 550px) {
-    padding-inline: 12px;
-    padding-block: 8px;
+    padding: 8px 12px;
     font-size: 0.85em;
     margin-right: 10px;
     
@@ -102,7 +101,7 @@ const Nav = styled.nav`
     padding: 20px 10px;
   }
   @media screen and (max-width: 550px) {
-    padding: 10px 10px;
+    padding: 15px 10px;
   }
   @media screen and (max-width: 480px) {
     padding: 15px 10px;

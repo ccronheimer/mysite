@@ -14,7 +14,7 @@ const NavBar = () => {
           </Icon>
         </Left>
         <Right>
-        <Button href="#">Projects</Button>
+        <Button href="#"><ButtonText>Projects</ButtonText></Button>
           
         </Right>
       </Nav>
@@ -22,33 +22,24 @@ const NavBar = () => {
   );
 };
 
+const ButtonText = styled.a`
+color: white;
+font-family: "Helvetica Neue Bold";
+font-size: 14px;
+`;
 const Button = styled.a`
- text-decoration: none;
- background-color: #057bf7; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  border-radius: 20px;
-  font-family: "Helvetica Neue Bold";
-  
-    font-size: 0.8em;
+ display: inline-block;
+    padding: 3px 0 6px;
+    border-radius: 16.5px;
+   margin-right: 10px;
+   margin-top: 5px;
+    outline: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #057bf7;
+    white-space: nowrap;
+    text-decoration: none;
 
-  @media screen and (max-width: 1024px) {
-    padding-inline: 14px;
-    padding-block: 8px;
-    font-size: 0.8em;
-  }
-  @media screen and (max-width: 768px) {
-    padding-inline: 14px;
-    padding-block: 8px;
-    font-size: 0.8em;
-  }
-  @media screen and (max-width: 550px) {
-    margin: 10px;
-    font-size: 0.8em;
-  }
 `;
 const Icon = styled.a`
   /* em means 2x relative to this font */

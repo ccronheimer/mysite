@@ -9,7 +9,7 @@ import HelveticaNeueMedium from './HelveticaNeue-Medium.woff2';
 import HelveticaNeueBold from './HelveticaNeue-Bold.woff2';
 
 import SFMono from './SFNSMono.woff2';
-
+import SFMonoBold from './SF-Mono-Bold.woff2';
 export default createGlobalStyle`
     @font-face {
         font-family: 'SF Pro Rounded';
@@ -49,6 +49,11 @@ export default createGlobalStyle`
     @font-face {
         font-family: 'SF Mono';
         src: url(${SFMono}) format('woff2');
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SF Mono Bold';
+        src: url(${SFMonoBold}) format('woff2');
         font-style: normal;
     }
 `;

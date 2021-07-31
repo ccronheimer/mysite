@@ -648,7 +648,7 @@ const IntroContainer = styled.div`
 
 const Email = styled.a`
   transition: all 0.2s ease-in-out;
-  font-weight: 900;
+  
   text-decoration: none;
   display: inline-block;
   padding: 2px 3px;
@@ -657,8 +657,8 @@ const Email = styled.a`
   box-shadow: inset 0px -4px 0px #057bf7;
   padding-bottom: 6px;
   color: white;
-  font-family: "SF Mono";
-  
+  font-family: "SF Mono Bold";
+ 
   &:hover {
     box-shadow: inset 0 -33px 0 0 #057bf7;
     

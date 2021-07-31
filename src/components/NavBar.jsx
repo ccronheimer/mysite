@@ -105,7 +105,7 @@ const Nav = styled.nav`
     padding: 10px 10px;
   }
   @media screen and (max-width: 480px) {
-    padding: 10px 10px;
+    padding: 15px 10px;
   }
 `;
 

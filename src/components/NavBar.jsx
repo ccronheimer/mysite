@@ -25,17 +25,16 @@ const NavBar = () => {
 const ButtonText = styled.a`
 color: white;
 font-family: "Helvetica Neue Bold";
-font-size: 14px;
+font-size: 1em;
 `;
 const Button = styled.a`
  display: inline-block;
     padding: 3px 0 6px;
-    border-radius: 16.5px;
-   margin-right: 10px;
-   margin-top: 5px;
+    border-radius: 20px;
+ 
     outline: none;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-inline: 20px;
+    padding-block: 10px;
     background-color: #057bf7;
     white-space: nowrap;
     text-decoration: none;

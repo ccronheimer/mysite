@@ -29,14 +29,11 @@ const Button = styled.a`
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
+  display: block;
   border-radius: 20px;
   font-family: "Helvetica Neue Bold";
-  padding-inline: 14px;
-    padding-block: 8px;
+  
     font-size: 0.8em;
-    margin-right: 6px;
 
   @media screen and (max-width: 1024px) {
     padding-inline: 14px;
@@ -49,8 +46,7 @@ const Button = styled.a`
     font-size: 0.8em;
   }
   @media screen and (max-width: 550px) {
-    padding-inline: 14px;
-    padding-block: 8px;
+    margin: 10px;
     font-size: 0.8em;
   }
 `;

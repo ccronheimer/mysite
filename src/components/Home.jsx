@@ -19,7 +19,7 @@ const Home = () => {
           <IntroTagLine>
             Cameron Cronheimer
             <br />
-            <SoftwareDeveloperText><SecondaryText>Software Developer</SecondaryText></SoftwareDeveloperText>
+            <SoftwareDeveloperText>Software Developer</SoftwareDeveloperText>
           </IntroTagLine>
           <IntroContact>
           <SecondaryText>
@@ -35,7 +35,7 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          <SecondaryText>I am currently studying </SecondaryText><BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> <SecondaryText>at</SecondaryText>  <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink><SecondaryText>. I am seeking a software developer internship for spring 2022.</SecondaryText>
+          <SecondaryText>I am currently studying </SecondaryText><BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> <SecondaryText>at</SecondaryText>  <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink><SecondaryText>. I am looking for a software developer internship for spring 2022.</SecondaryText>
         </SectionContent>
       </SectionBackground>
 
@@ -119,19 +119,28 @@ const Home = () => {
         <SectionTitle>Featured Projects</SectionTitle>
         <SectionContent>
           <Project1>
-            <Project1>
               <ProjectPic>
                 <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
               </ProjectPic>
               <ProjectCaption>
-                <ProjectName>Coloring Asmr</ProjectName>
-                <p>
-                  Custom wordpress theme built with Timber and Woocommerce for
-                  blistabloc, the only reactive shoe insert that prevents
-                  blisters from forming.
-                </p>
+                <ProjectName>Coloring ASMR </ProjectName>
+                <ProjectDescription>
+                  A relaxing Coloring ASMR app I made with Unity and C#, currently
+                  live on the PlayStore and AppStore. 
+                </ProjectDescription>
               </ProjectCaption>
-            </Project1>
+          </Project1>
+          <Project1>
+              <ProjectPic>
+                <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
+              </ProjectPic>
+              <ProjectCaption>
+                <ProjectName>Board Life</ProjectName>
+                <ProjectDescription>
+                  A physics balance board game I made with Unity and C#, currently
+                  live on the PlayStore and AppStore.
+                </ProjectDescription>
+              </ProjectCaption>
           </Project1>
         </SectionContent>
       </FeaturedProjects>
@@ -140,20 +149,20 @@ const Home = () => {
         <SectionContent>
           <Project>
             <MoreProjectName>Neural Network</MoreProjectName>
-            <p>
+            <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
-            </p>
+            </ProjectDescription>
             <TechUsed>
               <TechItem>Java</TechItem>
             </TechUsed>
           </Project>
           <Project>
             <MoreProjectName>Surf</MoreProjectName>
-            <p>
+            <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
-            </p>
+            </ProjectDescription>
             <TechUsed>
               <TechItem>JavaScript</TechItem>
               <TechItem>React</TechItem>
@@ -162,10 +171,10 @@ const Home = () => {
           </Project>
           <Project>
             <MoreProjectName>Surf</MoreProjectName>
-            <p>
+            <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
-            </p>
+            </ProjectDescription>
             <TechUsed>
               <TechItem>JavaScript</TechItem>
               <TechItem>React</TechItem>
@@ -253,9 +262,9 @@ const Top = styled.div`
   }
 `;
 const FooterCopyRight = styled.div`
-  font-weight: 700;
+
   width: 300px;
-  font-family: "SF Mono";
+  font-family: "SF Mono Bold";
   color: #f5f5f7;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
@@ -292,7 +301,7 @@ const TheFooter = styled.footer`
 const TechItem = styled.span`
   display: inline-block;
   margin: 3px 5px 3px 0;
-  font-family: "SF Mono";
+  font-family: "SF Mono Bold";
   font-size: 0.75rem;
   font-weight: 700;
   padding: 2px 7px;
@@ -303,10 +312,19 @@ const TechItem = styled.span`
 `;
 const TechUsed = styled.div``;
 
+const ProjectDescription = styled.p`
+line-height: 1.5;
+opacity: 60%;
+font-family: "Helvetica Neue";
+color: white;
+
+`;
+
+
 const ProjectName = styled.div`
   margin-bottom: 10px;
   font-family: "Helvetica Neue Bold";
-  color: #f5f5f7;
+  color: white;
   font-size: 1.1em;
   @media screen and (max-width: 630px) {
     display: block;
@@ -318,6 +336,7 @@ const ProjectName = styled.div`
 const Project = styled.div`
   max-width: 600px;
   margin-bottom: 50px;
+  
 `;
 const OtherProjects = styled.section`
   display: -webkit-box;
@@ -430,7 +449,7 @@ const ArrowLink = styled.a`
   white-space: nowrap;
   font-size: 1.2rem;
   text-decoration: none;
-  color: #f5f5f7;
+  color: white;
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
@@ -438,15 +457,17 @@ const ArrowLink = styled.a`
 const JobPosition = styled.div`
   font-size: 1rem;
   font-family: "Helvetica Neue";
+  opacity: 60%;
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
   }
 `;
 const JobTime = styled.div`
   font-size: 0.85rem;
-  font-family: "SF Mono";
+  font-family: "SF Mono Bold";
   margin-top: 3.5px;
-  color: #f5f5f7;
+  color: white;
+  opacity: 60%;
   @media screen and (max-width: 480px) {
     font-size: 0.7rem;
   }
@@ -455,7 +476,7 @@ const JobCompany = styled.div`
   
   text-decoration: none;
   font-size: 1.1rem;
-  color: #f5f5f7;
+  color: white;
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
@@ -506,11 +527,12 @@ const SkillsCategoryItem = styled.li`
   text-align: -webkit-match-parent;
   margin: 3px 0;
   font-size: 0.9rem;
-  color: #f5f5f7;
+  color: white;
+  opacity: 60%;
 `;
 const SkillsCategoryLabel = styled.div`
   font-family: "Helvetica Neue Bold";
-  color: #f5f5f7;
+  color: white;
   text-transform: uppercase;
 `;
 const SkillsCategory = styled.div`
@@ -560,12 +582,12 @@ const SectionContent = styled.div`
   width: 100%;
   max-width: 650px;
   font-family: "Helvetica Neue";
-  color: #f5f5f7;
+  color: white;
   word-wrap: break-word;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
   box-sizing: border-box;
-  
+  line-height: 1.5;
   /* Change fontweight to 700 for bold */
   @media screen and (max-width: 768px) {
     padding-top: 30px;
@@ -623,7 +645,8 @@ const SectionBackground = styled.section`
 const SoftwareDeveloperText = styled.div`
   font-family: "Helvetica Neue";
   font-size: 0.8em;
-  font-weight: lighter;
+  font-weight: 400;
+  opacity: 60%;
 `;
 const IntroContainer = styled.div`
   padding: 50px 100px;
@@ -653,12 +676,12 @@ const Email = styled.a`
   text-decoration: none;
   -webkit-box-shadow: inset 0px -4px 0 #057bf7;
   box-shadow: inset 0px -4px 0px #057bf7;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   color: white;
   font-family: "SF Mono Bold";
   
   &:hover {
-    box-shadow: inset 0 -33px 0 0 #057bf7;
+    box-shadow: inset 0 -40px 0 0 #057bf7;
     
   }
 `;
@@ -667,8 +690,8 @@ const IntroTagLine = styled.h1`
   max-width: 700px;
   display: block;
   font-size: 2.3em;
-  color: #f5f5f7;
-  line-height: 1.2;
+  color: white;
+  line-height: 1.5;
   
   font-family: "Helvetica Neue Bold";
   @media screen and (max-width: 1024px) {
@@ -687,15 +710,17 @@ const IntroContact = styled.h2`
   display: block;
   font-weight: 400;
   color: white;
-  
+  line-height: 1.5;
   font-family: "Helvetica Neue";
 
   @media screen and (max-width: 550px) {
     font-size: 1rem;
+    
   }
 `;
 const SecondaryText = styled.span`
-  opacity: 87%;
+  opacity: 60%;
+  
 `;
 const Intro = styled.header`
   display: flex;

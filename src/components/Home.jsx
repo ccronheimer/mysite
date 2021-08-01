@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Component, useRef, useEffect } from "react";
 import styled from "styled-components";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
+
+import video from "../video/BoardLife.mp4";
+
 import {
   FaArrowRight,
   FaGithub,
@@ -10,10 +13,21 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 /* Futura, Helvetica */
+
+const useMountEffect = fun => useEffect(fun, []);
+
 const Home = () => {
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView(); // run this function from an event handler or pass it to useEffect to execute scroll
+
+  useMountEffect(executeScroll); // Scroll on mount
+
   return (
     <>
       <NavBar />
+      <button onClick={executeScroll}>Click me</button>
+      
       <IntroContainer>
         <Intro>
           <IntroTagLine>
@@ -117,10 +131,14 @@ const Home = () => {
       </SectionExperience>
       <FeaturedProjects>
         <SectionTitle>Featured Projects</SectionTitle>
-        <SectionContent>
-          <Project1>
+        <SectionContent ref={myRef}>
+        <Project1>
+        <Project1>
               <ProjectPic>
-                <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
+              <video width="250" controls={false} autoPlay muted loop>
+      <source src={video} type="video/mp4"/>
+     </video>
+             
               </ProjectPic>
               <ProjectCaption>
                 <ProjectName>Coloring ASMR </ProjectName>
@@ -130,6 +148,8 @@ const Home = () => {
                 </ProjectDescription>
               </ProjectCaption>
           </Project1>
+        </Project1>
+         
           <Project1>
               <ProjectPic>
                 <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
@@ -199,9 +219,7 @@ const Home = () => {
           <FooterLink>
             <FaGithub />
           </FooterLink>
-          <FooterLink>
-            <FaInstagram />
-          </FooterLink>
+          
         </FooterLinks>
       </TheFooter>
     </>

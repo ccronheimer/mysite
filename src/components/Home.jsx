@@ -135,7 +135,7 @@ const Home = () => {
         <Project1>
         <Project1>
               <ProjectPic>
-              <video width="250" controls={false} autoPlay muted loop>
+              <video playsinline autoplay loop muted width="250" controls={false}>
       <source src={video} type="video/mp4"/>
      </video>
              

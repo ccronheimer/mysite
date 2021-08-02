@@ -134,33 +134,37 @@ const Home = () => {
         <SectionContent ref={myRef}>
         
         <Project1>
-              <ProjectPic>
+              <ProjectPic width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();">
               
-              <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
+            
+      <source src={video} type="video/mp4"/>
+    
               </ProjectPic>
+
               <ProjectCaption>
                 <ProjectName>Coloring ASMR </ProjectName>
-                <ProjectDescription>
+                <FeaturedProjectDescription>
                   A relaxing Coloring ASMR app I made with Unity and C#, currently
                   live on the PlayStore and AppStore. 
-                </ProjectDescription>
+                </FeaturedProjectDescription>
               </ProjectCaption>
           </Project1>
-   
-         
+
           <Project1>
-              <ProjectPic>
-                
-                <video width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();"> 
-      <source src={video} type="video/mp4"/>
-     </video>
-              </ProjectPic>
+          <ProjectPic width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();">
+              
+            
+              <source src={video} type="video/mp4"/>
+            
+                      </ProjectPic>
+        
+
               <ProjectCaption>
                 <ProjectName>Board Life</ProjectName>
-                <ProjectDescription>
+                <FeaturedProjectDescription>
                   A physics balance board game I made with Unity and C#, currently
                   live on the PlayStore and AppStore.
-                </ProjectDescription>
+                </FeaturedProjectDescription>
               </ProjectCaption>
           </Project1>
         </SectionContent>
@@ -228,6 +232,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 const BoldLink = styled.a`
    text-decoration: none;
@@ -341,12 +346,13 @@ color: white;
 
 
 const ProjectName = styled.div`
-  margin-bottom: 10px;
+  
   font-family: "Helvetica Neue Bold";
   color: white;
   font-size: 1.1em;
+  display: block;
   @media screen and (max-width: 630px) {
-    display: block;
+    margin-bottom: 10px;
     font-size: 1em;
 
   }
@@ -393,28 +399,37 @@ const MoreProjectName = styled.div`
   }
 `;
 const ProjectCaption = styled.figcaption`
-  width: 200px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-left: 30px;
   display: block;
-  @media screen and (max-width: 768px) {
+  width: 200px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 30px;
+
+    @media screen and (max-width: 768px)
+ {
     width: 100%;
     margin-top: 25px;
-  }
+    margin-left: 0;
+}
 `;
-const ProjectPic = styled.figure`
-  max-width: 700px;
-  overflow: visible;
-  margin: 0;
+const FeaturedProjectDescription = styled.p`
   display: block;
-  margin-inline-start: 80px;
-  margin-inline-end: 40px;
-  border-radius: 100px;
-  @media screen and (max-width: 768px) {
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: "Helvetica Neue";
+    opacity: 60%;
+`;
+const ProjectPic = styled.video`
+@media screen and (max-width: 768px) {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   }
+     
 `;
 const Project1 = styled.div`
   display: -webkit-box;

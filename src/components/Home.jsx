@@ -132,13 +132,11 @@ const Home = () => {
       <FeaturedProjects>
         <SectionTitle>Featured Projects</SectionTitle>
         <SectionContent ref={myRef}>
-        <Project1>
+        
         <Project1>
               <ProjectPic>
-              <video width="250" controls={false} autoPlay muted loop playsInline>
-      <source src={video} type="video/mp4"/>
-     </video>
-             
+              
+              <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
               </ProjectPic>
               <ProjectCaption>
                 <ProjectName>Coloring ASMR </ProjectName>
@@ -148,11 +146,14 @@ const Home = () => {
                 </ProjectDescription>
               </ProjectCaption>
           </Project1>
-        </Project1>
+   
          
           <Project1>
               <ProjectPic>
-                <img src="https://i.picsum.photos/id/1049/200/200.jpg?hmac=9458e0GuMIU0518gk-YBqEGna1AnYjhDQGPEXFp-J04" />
+                
+                <video width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();"> 
+      <source src={video} type="video/mp4"/>
+     </video>
               </ProjectPic>
               <ProjectCaption>
                 <ProjectName>Board Life</ProjectName>
@@ -409,7 +410,7 @@ const ProjectPic = styled.figure`
   display: block;
   margin-inline-start: 80px;
   margin-inline-end: 40px;
-
+  border-radius: 100px;
   @media screen and (max-width: 768px) {
     margin-inline-start: 40px;
     margin-inline-end: 40px;

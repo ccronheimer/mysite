@@ -168,12 +168,12 @@ const Home = () => {
           <Project1>
             <ProjectPic
               width="250"
-              controls={false}
+              controls
               autoPlay
               muted
               loop
               playsInline
-              onLoadedData="this.play();"
+              
             >
               <source src={ColoringAsmrVid} type="video/mp4" />
             </ProjectPic>
@@ -190,12 +190,12 @@ const Home = () => {
           <Project1>
             <ProjectPic
               width="250"
-              controls={false}
+              controls
               autoPlay
               muted
               loop
               playsInline
-              onLoadedData="this.play();"
+              
             >
               <source src={BoardLifeVid} type="video/mp4" />
             </ProjectPic>

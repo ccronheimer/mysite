@@ -3,7 +3,8 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 
-import video from "../video/BoardLife.mp4";
+import BoardLifeVid from "../video/BoardLife.mp4";
+import ColoringAsmrVid from "../video/ColoringASMR.mp4";
 
 import {
   FaArrowRight,
@@ -14,20 +15,11 @@ import {
 } from "react-icons/fa";
 /* Futura, Helvetica */
 
-const useMountEffect = fun => useEffect(fun, []);
-
 const Home = () => {
-  const myRef = useRef(null);
-
-  const executeScroll = () => myRef.current.scrollIntoView(); // run this function from an event handler or pass it to useEffect to execute scroll
-
-  useMountEffect(executeScroll); // Scroll on mount
-
   return (
     <>
       <NavBar />
-      <button onClick={executeScroll}>Click me</button>
-      
+
       <IntroContainer>
         <Intro>
           <IntroTagLine>
@@ -36,10 +28,7 @@ const Home = () => {
             <SoftwareDeveloperText>Software Developer</SoftwareDeveloperText>
           </IntroTagLine>
           <IntroContact>
-          <SecondaryText>
-            Get in touch 
-            </SecondaryText>
-            {" "}👉{" "}
+            <SecondaryText>Get in touch</SecondaryText> 👉{" "}
             <Email href="mailto:cameroncronheimer@gmail.com">
               cameroncronheimer@gmail.com
             </Email>
@@ -49,7 +38,23 @@ const Home = () => {
       <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
-          <SecondaryText>I am currently studying </SecondaryText><BoldLink href="https://brocku.ca/webcal/2020/undergrad/cosc.html" target="_blank">Computer Science</BoldLink> <SecondaryText>at</SecondaryText>  <BoldLink href="https://en.wikipedia.org/wiki/Brock_University" target="_blank">Brock University</BoldLink><SecondaryText>. I am looking for a software developer internship for spring 2022.</SecondaryText>
+          <SecondaryText>I am currently studying </SecondaryText>
+          <BoldLink
+            href="https://brocku.ca/webcal/2020/undergrad/cosc.html"
+            target="_blank"
+          >
+            Computer Science
+          </BoldLink>{" "}
+          <SecondaryText>at</SecondaryText>{" "}
+          <BoldLink
+            href="https://en.wikipedia.org/wiki/Brock_University"
+            target="_blank"
+          >
+            Brock University
+          </BoldLink>
+          <SecondaryText>
+            . I am looking for a software developer internship for spring 2022.
+          </SecondaryText>
         </SectionContent>
       </SectionBackground>
 
@@ -59,7 +64,14 @@ const Home = () => {
           <Skills>
             <SkillsCategory>
               <SkillsCategoryLabel>Langauges</SkillsCategoryLabel>
-              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+              <ul
+                style={{
+                  listStyleType: "none",
+                  padding: "0",
+                  margin: "0",
+                  lineHeight: "1.5",
+                }}
+              >
                 <SkillsCategoryItem>JavaScript</SkillsCategoryItem>
                 <SkillsCategoryItem>Swift</SkillsCategoryItem>
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
@@ -70,20 +82,31 @@ const Home = () => {
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Frameworks</SkillsCategoryLabel>
-              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
-
+              <ul
+                style={{
+                  listStyleType: "none",
+                  padding: "0",
+                  margin: "0",
+                  lineHeight: "1.5",
+                }}
+              >
                 <SkillsCategoryItem>React</SkillsCategoryItem>
                 <SkillsCategoryItem>React-Native</SkillsCategoryItem>
                 <SkillsCategoryItem>SwiftUI</SkillsCategoryItem>
                 <SkillsCategoryItem>Express</SkillsCategoryItem>
                 <SkillsCategoryItem>Styled Components</SkillsCategoryItem>
-
               </ul>
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Tools</SkillsCategoryLabel>
-              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
-
+              <ul
+                style={{
+                  listStyleType: "none",
+                  padding: "0",
+                  margin: "0",
+                  lineHeight: "1.5",
+                }}
+              >
                 <SkillsCategoryItem>Git & Github</SkillsCategoryItem>
                 <SkillsCategoryItem>Firebase Firestore</SkillsCategoryItem>
                 <SkillsCategoryItem>MongoDB</SkillsCategoryItem>
@@ -94,11 +117,17 @@ const Home = () => {
             </SkillsCategory>
             <SkillsCategory>
               <SkillsCategoryLabel>Design</SkillsCategoryLabel>
-              <ul style={{listStyleType: "none", padding: "0", margin:"0", lineHeight:"1.5"}}>
+              <ul
+                style={{
+                  listStyleType: "none",
+                  padding: "0",
+                  margin: "0",
+                  lineHeight: "1.5",
+                }}
+              >
                 <SkillsCategoryItem>Figma</SkillsCategoryItem>
                 <SkillsCategoryItem>Blender</SkillsCategoryItem>
                 <SkillsCategoryItem>draw.io</SkillsCategoryItem>
-
               </ul>
             </SkillsCategory>
           </Skills>
@@ -112,9 +141,9 @@ const Home = () => {
             <Job>
               <TimePlace>
                 <JobCompany>
-                
-                  <BoldLink href="https://galacticthumb.com/">Galatic Thumb</BoldLink>
-                  
+                  <BoldLink href="https://galacticthumb.com/">
+                    Galatic Thumb
+                  </BoldLink>
                 </JobCompany>
                 <JobTime>May 2019 - June 2020</JobTime>
               </TimePlace>
@@ -124,48 +153,60 @@ const Home = () => {
           <ArrowLink href="#">
             View My Resume{" "}
             <FaArrowRight
-              style={{ textAlign: "center", verticalAlign: "middle", color: "#057bf7"}}
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+              }}
             />
           </ArrowLink>
         </SectionContent>
       </SectionExperience>
-      <FeaturedProjects>
+      <FeaturedProjects id="projects">
         <SectionTitle>Featured Projects</SectionTitle>
-        <SectionContent ref={myRef}>
-        
-        <Project1>
-              <ProjectPic width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();">
-              
-            
-      <source src={video} type="video/mp4"/>
-    
-              </ProjectPic>
+        <SectionContent>
+          <Project1>
+            <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              onLoadedData="this.play();"
+            >
+              <source src={ColoringAsmrVid} type="video/mp4" />
+            </ProjectPic>
 
-              <ProjectCaption>
-                <ProjectName>Coloring ASMR </ProjectName>
-                <FeaturedProjectDescription>
-                  A relaxing Coloring ASMR app I made with Unity and C#, currently
-                  live on the PlayStore and AppStore. 
-                </FeaturedProjectDescription>
-              </ProjectCaption>
+            <ProjectCaption>
+              <ProjectName>Coloring ASMR </ProjectName>
+              <FeaturedProjectDescription>
+                A relaxing Coloring ASMR app I made with Unity and C#, currently
+                live on the PlayStore and AppStore.
+              </FeaturedProjectDescription>
+            </ProjectCaption>
           </Project1>
 
           <Project1>
-          <ProjectPic width="250" controls={false} autoPlay muted loop playsInline onLoadedData="this.play();">
-              
-            
-              <source src={video} type="video/mp4"/>
-            
-                      </ProjectPic>
-        
+            <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              onLoadedData="this.play();"
+            >
+              <source src={BoardLifeVid} type="video/mp4" />
+            </ProjectPic>
 
-              <ProjectCaption>
-                <ProjectName>Board Life</ProjectName>
-                <FeaturedProjectDescription>
-                  A physics balance board game I made with Unity and C#, currently
-                  live on the PlayStore and AppStore.
-                </FeaturedProjectDescription>
-              </ProjectCaption>
+            <ProjectCaption>
+              <ProjectName>Board Life</ProjectName>
+              <FeaturedProjectDescription>
+                A physics balance board game I made with Unity and C#, currently
+                live on the PlayStore and AppStore.
+              </FeaturedProjectDescription>
+            </ProjectCaption>
           </Project1>
         </SectionContent>
       </FeaturedProjects>
@@ -224,7 +265,6 @@ const Home = () => {
           <FooterLink>
             <FaGithub />
           </FooterLink>
-          
         </FooterLinks>
       </TheFooter>
     </>
@@ -233,12 +273,10 @@ const Home = () => {
 
 export default Home;
 
-
 const BoldLink = styled.a`
-   text-decoration: none;
-   color: white;
-   font-family: "Helvetica Neue Bold";
-   
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica Neue Bold";
 `;
 const FooterLink = styled.div`
   position: relative;
@@ -251,7 +289,7 @@ const FooterLink = styled.div`
   text-decoration: none;
 `;
 const FooterLinks = styled.div`
- font-size: 2em;
+  font-size: 2em;
 
   @media screen and (max-width: 630px) {
     display: -webkit-box;
@@ -262,7 +300,6 @@ const FooterLinks = styled.div`
     justify-content: center;
     font-size: 1.5em;
   }
-
 `;
 const Bottom = styled.div`
   @media screen and (max-width: 630px) {
@@ -278,7 +315,6 @@ const Top = styled.div`
   @media screen and (max-width: 630px) {
     display: inline-block;
     font-size: 0.9em;
-
   }
   @media screen and (max-width: 480px) {
     display: block;
@@ -286,7 +322,6 @@ const Top = styled.div`
   }
 `;
 const FooterCopyRight = styled.div`
-
   width: 300px;
   font-family: "SF Mono Bold";
   color: #f5f5f7;
@@ -313,7 +348,6 @@ const TheFooter = styled.footer`
 
   @media screen and (max-width: 1024px) {
     padding: 50px;
-    
   }
   @media screen and (max-width: 630px) {
     display: block;
@@ -337,16 +371,13 @@ const TechItem = styled.span`
 const TechUsed = styled.div``;
 
 const ProjectDescription = styled.p`
-line-height: 1.5;
-opacity: 60%;
-font-family: "Helvetica Neue";
-color: white;
-
+  line-height: 1.5;
+  opacity: 60%;
+  font-family: "Helvetica Neue";
+  color: white;
 `;
 
-
 const ProjectName = styled.div`
-  
   font-family: "Helvetica Neue Bold";
   color: white;
   font-size: 1.1em;
@@ -354,14 +385,11 @@ const ProjectName = styled.div`
   @media screen and (max-width: 630px) {
     margin-bottom: 10px;
     font-size: 1em;
-
   }
-  
 `;
 const Project = styled.div`
   max-width: 600px;
   margin-bottom: 50px;
-  
 `;
 const OtherProjects = styled.section`
   display: -webkit-box;
@@ -395,48 +423,44 @@ const MoreProjectName = styled.div`
   @media screen and (max-width: 630px) {
     display: block;
     font-size: 1em;
-
   }
 `;
 const ProjectCaption = styled.figcaption`
   display: block;
   width: 200px;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-left: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 30px;
 
-    @media screen and (max-width: 768px)
- {
+  @media screen and (max-width: 768px) {
     width: 100%;
     margin-top: 25px;
     margin-left: 0;
-}
+  }
 `;
 const FeaturedProjectDescription = styled.p`
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-family: "Helvetica Neue";
-    opacity: 60%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "Helvetica Neue";
+  opacity: 60%;
 `;
 const ProjectPic = styled.video`
-@media screen and (max-width: 768px) {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  @media screen and (max-width: 768px) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
-     
 `;
 const Project1 = styled.div`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
-  margin-left: -5%;
   width: 125%;
 
   @media screen and (max-width: 1280px) {
@@ -499,7 +523,7 @@ const JobPosition = styled.div`
 const JobTime = styled.div`
   font-size: 0.85rem;
   font-family: "SF Mono Bold";
-  margin-top: 3.5px;
+  margin-top: 5px;
   color: white;
   opacity: 60%;
   @media screen and (max-width: 480px) {
@@ -507,14 +531,12 @@ const JobTime = styled.div`
   }
 `;
 const JobCompany = styled.div`
-  
   text-decoration: none;
   font-size: 1.1rem;
   color: white;
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
-
 `;
 const TimePlace = styled.div`
   display: -webkit-box;
@@ -628,7 +650,7 @@ const SectionContent = styled.div`
     padding-left: 50px;
   }
   @media screen and (max-width: 480px) {
-    padding-left: 30px;
+    padding-inline: 20px;
   }
 `;
 const SectionTitle = styled.div`
@@ -713,10 +735,9 @@ const Email = styled.a`
   padding-bottom: 4px;
   color: white;
   font-family: "SF Mono Bold";
-  
+
   &:hover {
     box-shadow: inset 0 -40px 0 0 #057bf7;
-    
   }
 `;
 
@@ -726,7 +747,7 @@ const IntroTagLine = styled.h1`
   font-size: 2.3em;
   color: white;
   line-height: 1.5;
-  
+
   font-family: "Helvetica Neue Bold";
   @media screen and (max-width: 1024px) {
     font-size: 2.2rem;
@@ -749,12 +770,10 @@ const IntroContact = styled.h2`
 
   @media screen and (max-width: 550px) {
     font-size: 1rem;
-    
   }
 `;
 const SecondaryText = styled.span`
   opacity: 60%;
-  
 `;
 const Intro = styled.header`
   display: flex;

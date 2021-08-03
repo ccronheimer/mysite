@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaMoon } from "react-icons/fa";
 import { LinkedIn } from "@material-ui/icons";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const NavBar = () => {
   return (
@@ -14,7 +15,7 @@ const NavBar = () => {
           </Icon>
         </Left>
         <Right>
-        <Button href="#"><ButtonText>Projects</ButtonText></Button>
+        <Button><AnchorLink style={{textDecoration:"none"}}href="#projects"><ButtonText>Projects</ButtonText></AnchorLink></Button>
           
         </Right>
       </Nav>
@@ -28,7 +29,7 @@ font-family: "Helvetica Neue Bold";
 
 
 `;
-const Button = styled.a`
+const Button = styled.div`
  display: inline-block;
     padding: 3px 0 6px;
     border-radius: 20px;

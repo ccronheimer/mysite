@@ -188,7 +188,17 @@ const Home = () => {
           </Project1>
 
           <Project1>
-           
+          <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              
+            >
+              <source src={ColoringAsmrVid} type="video/mp4" />
+            </ProjectPic>
             <ProjectCaption>
               <ProjectName>Board Life</ProjectName>
               <FeaturedProjectDescription>

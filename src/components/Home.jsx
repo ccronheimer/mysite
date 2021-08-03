@@ -168,7 +168,7 @@ const Home = () => {
           <Project1>
             <ProjectPic
               width="250"
-              controls
+              controls={false}
               autoPlay
               muted
               loop
@@ -188,18 +188,7 @@ const Home = () => {
           </Project1>
 
           <Project1>
-            <ProjectPic
-              width="250"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-              
-            >
-              <source src={BoardLifeVid} type="video/mp4" />
-            </ProjectPic>
-
+           
             <ProjectCaption>
               <ProjectName>Board Life</ProjectName>
               <FeaturedProjectDescription>

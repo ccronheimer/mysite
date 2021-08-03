@@ -650,7 +650,9 @@ const SectionContent = styled.div`
     padding-left: 50px;
   }
   @media screen and (max-width: 480px) {
-    padding-inline: 20px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 const SectionTitle = styled.div`

@@ -14,6 +14,8 @@ import {
   FaInstagram,
   FaFacebook,
   FaLinkedin,
+  FaApple,
+  FaAndroid,
 } from "react-icons/fa";
 /* Futura, Helvetica */
 
@@ -152,7 +154,7 @@ const Home = () => {
               <JobPosition>Software Engineer</JobPosition>
             </Job>
           </Jobs>
-          <ArrowLink href="#">
+          <ArrowLink href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             View My Resume{" "}
             <FaArrowRight
               style={{
@@ -191,6 +193,16 @@ const Home = () => {
                 A relaxing Coloring ASMR app I made with Unity and C#, currently
                 live on the PlayStore and AppStore.
               </FeaturedProjectDescription>
+              <ProjectLinks>
+              <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
+              <FaApple/>
+
+              </IconLink>
+              <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
+              <FaAndroid/>
+              </IconLink>
+
+              </ProjectLinks>
             </ProjectCaption>
           </Project1>
 
@@ -213,6 +225,16 @@ const Home = () => {
                 A relaxing Coloring ASMR app I made with Unity and C#, currently
                 live on the PlayStore and AppStore.
               </FeaturedProjectDescription>
+              <ProjectLinks>
+              <IconLink href="https://apps.apple.com/us/app/coloring-asmr/id1522171988" target="_blank" rel="noopener noreferrer"> 
+              <FaApple/>
+
+              </IconLink>
+              <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.ColoringAsmr" target="_blank" rel="noopener noreferrer">
+              <FaAndroid/>
+              </IconLink>
+
+              </ProjectLinks>
             </ProjectCaption>
           </Project1>
 
@@ -234,6 +256,14 @@ const Home = () => {
                 A physics balance board game I made with Unity and C#, currently
                 live on the PlayStore and AppStore.
               </FeaturedProjectDescription>
+              
+              <ProjectLinks>
+              <IconLink href="https://apps.apple.com/us/app/board-life/id1444221598" target="_blank" rel="noopener noreferrer"> 
+              <FaApple/>
+
+              </IconLink>
+              </ProjectLinks>
+            
             </ProjectCaption>
           </Project1>
 
@@ -255,6 +285,14 @@ const Home = () => {
                 A physics balance board game I made with Unity and C#, currently
                 live on the PlayStore and AppStore.
               </FeaturedProjectDescription>
+              <ProjectLinks>
+              <IconLink href="https://apps.apple.com/us/app/bullet-city/id1460269119" target="_blank" rel="noopener noreferrer"> 
+              <FaApple/>
+
+              </IconLink>
+              
+
+              </ProjectLinks>
             </ProjectCaption>
           </Project1>
 
@@ -264,7 +302,7 @@ const Home = () => {
         <SectionTitle>More Projects</SectionTitle>
         <SectionContent>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Neural Network{" "}
             <FaArrowRight
               style={{
@@ -279,15 +317,14 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+             Trained and designed a feed-forward neural network in Java for COSC 3P71 intro to AI. The network uses backpropagation to detect odd parity bits.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Java</TechItem>
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="https://github.com/ccronheimer/UnityiOSAndroidRatingRequest" target="_blank" rel="noopener noreferrer">
             Unity iOS | Android rating request {" "}
             <FaArrowRight
               style={{
@@ -302,8 +339,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              A univeral script to request a rating from your users that works on Android and iOS devices with one line.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Unity</TechItem>
@@ -311,7 +347,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Unity iOS Leaderboard{" "}
             <FaArrowRight
               style={{
@@ -326,8 +362,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              Simple integration of a iOS leaderboard to work in your Unity app.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Unity</TechItem>
@@ -335,7 +370,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Genetic Algorithm{" "}
             <FaArrowRight
               style={{
@@ -358,7 +393,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             My Site{" "}
             <FaArrowRight
               style={{
@@ -373,8 +408,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              My personal website I made to showcase my projects.
             </ProjectDescription>
             <TechUsed>
               <TechItem>JavaScript</TechItem>
@@ -383,7 +417,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Isometric Graph Maze{" "}
             <FaArrowRight
               style={{
@@ -406,7 +440,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Instagram Liking Bot{" "}
             <FaArrowRight
               style={{
@@ -421,15 +455,14 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              A Instagram bot that likes posts under a select hashtag to boost direct traffic back to an account.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Python</TechItem>
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#">
+          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Unity 3d Map Generator{" "}
             <FaArrowRight
               style={{
@@ -464,10 +497,10 @@ const Home = () => {
           </Bottom>
         </FooterCopyRight>
         <FooterLinks>
-          <FooterLink>
+          <FooterLink href="https://www.linkedin.com/in/cameron-cronheimer-ab3a47165/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </FooterLink>
-          <FooterLink>
+          <FooterLink href="https://github.com/ccronheimer" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </FooterLink>
         </FooterLinks>
@@ -478,6 +511,25 @@ const Home = () => {
 
 export default Home;
 
+const IconLink = styled.a`
+ font-size: 1.6em;
+ color: #057bf7;
+ text-decoration: none;
+ transition: all .15s ease-in-out; 
+
+ :hover { 
+   transform: scale(1.2); 
+   }
+
+`;
+const ProjectLinks = styled.div`
+ display: flex;
+justify-content: space-between;
+width: 100px;
+font-size: 1.5em;
+align-items: center;
+
+`;
 const BoldLink = styled.a`
   text-decoration: none;
   color: white;
@@ -505,7 +557,7 @@ const BoldLink = styled.a`
 }
 
 `;
-const FooterLink = styled.div`
+const FooterLink = styled.a`
   position: relative;
   display: inline-block;
   color: #057bf7 !important;
@@ -514,9 +566,16 @@ const FooterLink = styled.div`
   margin: 0 15px;
   outline: 0;
   text-decoration: none;
+
+  transition: all .15s ease-in-out; 
+
+ :hover { 
+   transform: scale(1.2); 
+   }
+
 `;
 const FooterLinks = styled.div`
-  font-size: 2em;
+  font-size: 2.25em;
 
   @media screen and (max-width: 630px) {
     display: -webkit-box;
@@ -525,7 +584,7 @@ const FooterLinks = styled.div`
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size: 1.5em;
+ 
   }
 `;
 const Bottom = styled.div`

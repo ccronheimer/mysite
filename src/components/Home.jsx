@@ -7,6 +7,7 @@ import BoardLifeVid from "../video/BoardLifeNew.mp4";
 import ColoringAsmrVid from "../video/ColoringASMR.mp4";
 import SpermGameVid from "../video/SpermGame.mp4";
 import BulletCityVid from "../video/BulletCity.mp4";
+import Resume from "./resume.pdf";
 
 import {
   FaArrowRight,
@@ -154,7 +155,7 @@ const Home = () => {
               <JobPosition>Software Engineer</JobPosition>
             </Job>
           </Jobs>
-          <ArrowLink href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href={Resume} target="_blank" rel="noopener noreferrer">
             View My Resume{" "}
             <FaArrowRight
               style={{
@@ -393,7 +394,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/mysite" target="_blank" rel="noopener noreferrer">
             My Site{" "}
             <FaArrowRight
               style={{

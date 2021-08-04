@@ -15,7 +15,8 @@ const NavBar = () => {
           </Icon>
         </Left>
         <Right>
-        <Button><AnchorLink style={{textDecoration:"none"}}href="#projects"><ButtonText>Projects</ButtonText></AnchorLink></Button>
+        <AnchorLink style={{textDecoration:"none"}}href="#projects"><Button><ButtonText>Projects</ButtonText></Button></AnchorLink>
+        
           
         </Right>
       </Nav>

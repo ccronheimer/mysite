@@ -3,8 +3,10 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 
-import BoardLifeVid from "../video/BoardLife.mp4";
+import BoardLifeVid from "../video/BoardLifeNew.mp4";
 import ColoringAsmrVid from "../video/ColoringASMR.mp4";
+import SpermGameVid from "../video/SpermGame.mp4";
+import BulletCityVid from "../video/BulletCity.mp4";
 
 import {
   FaArrowRight,
@@ -165,6 +167,29 @@ const Home = () => {
       <FeaturedProjects id="projects">
         <SectionTitle>Featured Projects</SectionTitle>
         <SectionContent>
+
+        <Project1>
+            <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              
+            >
+              <source src={SpermGameVid} type="video/mp4" />
+            </ProjectPic>
+
+            <ProjectCaption>
+              <ProjectName>Sus Adventure</ProjectName>
+              <FeaturedProjectDescription>
+                A relaxing Coloring ASMR app I made with Unity and C#, currently
+                live on the PlayStore and AppStore.
+              </FeaturedProjectDescription>
+            </ProjectCaption>
+          </Project1>
+
           <Project1>
             <ProjectPic
               width="250"
@@ -207,6 +232,28 @@ const Home = () => {
               </FeaturedProjectDescription>
             </ProjectCaption>
           </Project1>
+
+          <Project1>
+          <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              
+            >
+              <source src={BulletCityVid} type="video/mp4" />
+            </ProjectPic>
+            <ProjectCaption>
+              <ProjectName>Bullet City</ProjectName>
+              <FeaturedProjectDescription>
+                A physics balance board game I made with Unity and C#, currently
+                live on the PlayStore and AppStore.
+              </FeaturedProjectDescription>
+            </ProjectCaption>
+          </Project1>
+
         </SectionContent>
       </FeaturedProjects>
       <OtherProjects>

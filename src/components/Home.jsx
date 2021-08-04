@@ -159,6 +159,10 @@ const Home = () => {
                 textAlign: "center",
                 verticalAlign: "middle",
                 color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
               }}
             />
           </ArrowLink>
@@ -260,7 +264,20 @@ const Home = () => {
         <SectionTitle>More Projects</SectionTitle>
         <SectionContent>
           <Project>
-            <MoreProjectName>Neural Network</MoreProjectName>
+          <ArrowLink href="#">
+            Neural Network{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
             <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
@@ -270,27 +287,51 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-            <MoreProjectName>Surf</MoreProjectName>
+          <ArrowLink href="#">
+            Unity iOS | Android rating request {" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
             <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
             </ProjectDescription>
             <TechUsed>
-              <TechItem>JavaScript</TechItem>
-              <TechItem>React</TechItem>
-              <TechItem>Axios</TechItem>
+              <TechItem>Unity</TechItem>
+              <TechItem>C#</TechItem>
             </TechUsed>
           </Project>
           <Project>
-            <MoreProjectName>Surf</MoreProjectName>
+          <ArrowLink href="#">
+            Unity iOS Leaderboard{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
             <ProjectDescription>
               Small React project created during an interview process to browse
               and search surf videos via the YouTube API.
             </ProjectDescription>
             <TechUsed>
-              <TechItem>JavaScript</TechItem>
-              <TechItem>React</TechItem>
-              <TechItem>Axios</TechItem>
+              <TechItem>Unity</TechItem>
+              <TechItem>C#</TechItem>
             </TechUsed>
           </Project>
         </SectionContent>
@@ -323,6 +364,28 @@ const BoldLink = styled.a`
   text-decoration: none;
   color: white;
   font-family: "Helvetica Neue Bold";
+
+  display: inline-block;
+  position: relative;
+ 
+  :after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+ :hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 `;
 const FooterLink = styled.div`
   position: relative;
@@ -459,16 +522,28 @@ const OtherProjects = styled.section`
     padding: 50px 35px;
   }
 `;
-const MoreProjectName = styled.div`
-  margin-bottom: 10px;
-  display: block;
-
+const MoreProjectName = styled.a`
+   -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-family: "Helvetica Neue Bold";
-  color: #f5f5f7;
-  font-size: 1.1em;
-  @media screen and (max-width: 630px) {
+  display: block;
+  background-color: transparent;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+  padding-right: 30px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
     display: block;
     font-size: 1em;
+  }
+
+  &:hover {
+    padding-right: 40px;
   }
 `;
 const ProjectCaption = styled.figcaption`
@@ -554,9 +629,21 @@ const ArrowLink = styled.a`
   font-size: 1.2rem;
   text-decoration: none;
   color: white;
+  position: relative;
+  
+  padding-right: 30px;
+
   @media screen and (max-width: 480px) {
     font-size: 1rem;
+    padding-right: 30px;
+
   }
+
+  &:hover {
+    padding-right: 40px;
+  }
+
+ 
 `;
 const JobPosition = styled.div`
   font-size: 1rem;
@@ -712,6 +799,7 @@ const SectionTitle = styled.div`
   letter-spacing: 2px;
   font-family: "Helvetica Neue Bold";
   white-space: nowrap;
+  font-size: 1.1em;
   @media screen and (max-width: 1024px) {
     margin-right: 50px;
   }

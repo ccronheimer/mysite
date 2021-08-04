@@ -334,6 +334,124 @@ const Home = () => {
               <TechItem>C#</TechItem>
             </TechUsed>
           </Project>
+          <Project>
+          <ArrowLink href="#">
+            Genetic Algorithm{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Java</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
+          <ArrowLink href="#">
+            My Site{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>JavaScript</TechItem>
+              <TechItem>React</TechItem>
+              <TechItem>Styled Components</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
+          <ArrowLink href="#">
+            Isometric Graph Maze{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Java</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
+          <ArrowLink href="#">
+            Instagram Liking Bot{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Python</TechItem>
+            </TechUsed>
+          </Project>
+          <Project>
+          <ArrowLink href="#">
+            Unity 3d Map Generator{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+              Small React project created during an interview process to browse
+              and search surf videos via the YouTube API.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Unity</TechItem>
+              <TechItem>C#</TechItem>
+            </TechUsed>
+          </Project>
         </SectionContent>
       </OtherProjects>
       <TheFooter>

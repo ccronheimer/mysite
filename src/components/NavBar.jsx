@@ -41,10 +41,6 @@ const Button = styled.div`
     white-space: nowrap;
     text-decoration: none;
 
-    @media screen and (max-width: 1024px) {
-    
-  }
- 
   @media screen and (max-width: 550px) {
     padding: 8px 12px;
     font-size: 0.85em;

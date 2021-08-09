@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GlobalFonts from './fonts/fonts';
 
 import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
@@ -10,6 +10,7 @@ import PrivacyColoring from './components/PrivacyColoring';
 import styled from "styled-components";
 
 const App = () => {
+    
     
     return (
         <>

@@ -1,5 +1,6 @@
-import React, { Component, useRef, useEffect } from "react";
-import styled from "styled-components";
+
+import React, { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 
@@ -8,6 +9,9 @@ import ColoringAsmrVid from "../video/ColoringASMR.mp4";
 import SpermGameVid from "../video/SpermGame.mp4";
 import BulletCityVid from "../video/BulletCity.mp4";
 import Resume from "./resume.pdf";
+
+import { lightTheme, darkTheme, GlobalStyles } from "../themes.jsx";
+
 
 import {
   FaArrowRight,
@@ -19,10 +23,18 @@ import {
   FaAndroid,
 } from "react-icons/fa";
 /* Futura, Helvetica */
-
 const Home = () => {
+    const [theme, setTheme] = useState("light");
+
+    const themeToggler = () => {
+        theme === "light" ? setTheme("dark") : setTheme("light");
+    }
+
   return (
-    <>
+
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+     <GlobalStyles />
+        {/*<button onClick={() => themeToggler()}></button>*/}
       <NavBar />
 
       <IntroContainer>
@@ -303,7 +315,7 @@ const Home = () => {
         <SectionTitle>More Projects</SectionTitle>
         <SectionContent>
           <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/NeuralNetwork" target="_blank" rel="noopener noreferrer">
             Neural Network{" "}
             <FaArrowRight
               style={{
@@ -506,7 +518,7 @@ const Home = () => {
           </FooterLink>
         </FooterLinks>
       </TheFooter>
-    </>
+    </ThemeProvider>
   );
 };
 
@@ -517,11 +529,9 @@ const IconLink = styled.a`
  color: #057bf7;
  text-decoration: none;
  transition: all .15s ease-in-out; 
-
  :hover { 
    transform: scale(1.2); 
    }
-
 `;
 const ProjectLinks = styled.div`
  display: flex;
@@ -529,13 +539,11 @@ justify-content: space-between;
 width: 100px;
 font-size: 1.5em;
 align-items: center;
-
 `;
 const BoldLink = styled.a`
   text-decoration: none;
   color: white;
   font-family: "Helvetica Neue Bold";
-
   display: inline-block;
   position: relative;
  
@@ -551,12 +559,10 @@ const BoldLink = styled.a`
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
  :hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 `;
 const FooterLink = styled.a`
   position: relative;
@@ -567,17 +573,13 @@ const FooterLink = styled.a`
   margin: 0 15px;
   outline: 0;
   text-decoration: none;
-
   transition: all .15s ease-in-out; 
-
  :hover { 
    transform: scale(1.2); 
    }
-
 `;
 const FooterLinks = styled.div`
   font-size: 2.25em;
-
   @media screen and (max-width: 630px) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,7 +634,6 @@ const TheFooter = styled.footer`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   @media screen and (max-width: 1024px) {
     padding: 50px;
   }
@@ -686,7 +687,6 @@ const OtherProjects = styled.section`
   -ms-flex-pack: center;
   justify-content: center;
   padding: 100px 170px;
-
   @media screen and (max-width: 1280px) {
     padding: 100px;
   }
@@ -713,13 +713,11 @@ const MoreProjectName = styled.a`
   position: relative;
   margin-bottom: 10px;
   padding-right: 30px;
-
   @media screen and (max-width: 480px) {
     font-size: 1rem;
     display: block;
     font-size: 1em;
   }
-
   &:hover {
     padding-right: 40px;
   }
@@ -730,7 +728,6 @@ const ProjectCaption = styled.figcaption`
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-left: 30px;
-
   @media screen and (max-width: 768px) {
     width: 100%;
     margin-top: 25px;
@@ -761,7 +758,6 @@ const Project1 = styled.div`
   display: flex;
   margin-bottom: 100px;
   width: 125%;
-
   @media screen and (max-width: 1280px) {
     width: 115%;
   }
@@ -782,7 +778,6 @@ const FeaturedProjects = styled.section`
   -ms-flex-pack: center;
   justify-content: center;
   padding: 100px 170px;
-
   @media screen and (max-width: 1280px) {
     padding: 100px;
   }
@@ -810,17 +805,13 @@ const ArrowLink = styled.a`
   position: relative;
   
   padding-right: 30px;
-
   @media screen and (max-width: 480px) {
     font-size: 1rem;
     padding-right: 30px;
-
   }
-
   &:hover {
     padding-right: 40px;
   }
-
  
 `;
 const JobPosition = styled.div`
@@ -878,7 +869,6 @@ const SectionExperience = styled.section`
   @media screen and (max-width: 1280px) {
     padding: 100px;
   }
-
   @media screen and (max-width: 1024px) {
     padding: 50px;
   }
@@ -916,7 +906,6 @@ const Skills = styled.div`
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
   @media screen and (max-width: 630px) {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -997,7 +986,6 @@ const SectionBackground = styled.section`
   -ms-flex-pack: center;
   justify-content: center;
   padding: 100px 170px;
-
   @media screen and (max-width: 1280px) {
     padding: 100px;
   }
@@ -1026,7 +1014,6 @@ const IntroContainer = styled.div`
   justify-content: space-evenly;
   max-width: 920px;
   margin: 0 auto;
-
   @media screen and (max-width: 630px) {
     padding: 100px 70px;
   }
@@ -1049,7 +1036,6 @@ const Email = styled.a`
   padding-bottom: 4px;
   color: white;
   font-family: "SF Mono Bold";
-
   &:hover {
     box-shadow: inset 0 -40px 0 0 #057bf7;
   }
@@ -1061,7 +1047,6 @@ const IntroTagLine = styled.h1`
   font-size: 2.3em;
   color: white;
   line-height: 1.5;
-
   font-family: "Helvetica Neue Bold";
   @media screen and (max-width: 1024px) {
     font-size: 2.2rem;
@@ -1081,7 +1066,6 @@ const IntroContact = styled.h2`
   color: white;
   line-height: 1.5;
   font-family: "Helvetica Neue";
-
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }

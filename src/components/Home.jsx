@@ -28,14 +28,14 @@ const Home = () => {
 
     const themeToggler = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
+        console.log("clicked");
     }
 
   return (
 
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
      <GlobalStyles />
-        {/*<button onClick={() => themeToggler()}></button>*/}
-      <NavBar />
+      <NavBar themeToggler={themeToggler}/>
 
       <IntroContainer>
         <Intro>

@@ -3,16 +3,14 @@ import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaMoon } from "react-icons/fa";
 import { LinkedIn } from "@material-ui/icons";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-
-const NavBar = () => {
+import DayNightToggle from './Toggle/DayNightToggle';
+const NavBar = ({ themeToggler }) => {
   return (
     <>
     
       <Nav>
         <Left>
-        <Icon href="#" target="_blank">
-           <FaMoon size="1.5em"/>
-          </Icon>
+        <DayNightToggle themeToggler={themeToggler}/>
         </Left>
         <Right>
         <AnchorLink style={{textDecoration:"none"}}href="#projects"><Button><ButtonText>Projects</ButtonText></Button></AnchorLink>

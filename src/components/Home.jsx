@@ -657,7 +657,7 @@ const TechUsed = styled.div``;
 
 const ProjectDescription = styled.p`
   line-height: 1.5;
-  opacity: 60%;
+  opacity: 74%;
   font-family: "Helvetica Neue";
 `;
 
@@ -717,7 +717,7 @@ const FeaturedProjectDescription = styled.p`
   margin-top: 0;
   margin-bottom: 25px;
   font-family: "Helvetica Neue";
-  opacity: 60%;
+  opacity: 74%;
 `;
 const ProjectPic = styled.video`
   @media screen and (max-width: 768px) {
@@ -790,7 +790,7 @@ const ArrowLink = styled.a`
 const JobPosition = styled.div`
   font-size: 1rem;
   font-family: "Helvetica Neue";
-  opacity: 60%;
+  opacity: 74%;
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
   }
@@ -799,7 +799,7 @@ const JobTime = styled.div`
   font-size: 0.85rem;
   font-family: "SF Mono Bold";
   margin-top: 5px;
-  opacity: 60%;
+  opacity: 74%;
   @media screen and (max-width: 480px) {
     font-size: 0.7rem;
   }
@@ -855,7 +855,7 @@ const SkillsCategoryItem = styled.li`
   text-align: -webkit-match-parent;
   margin: 3px 0;
   font-size: 0.9rem;
-  opacity: 60%;
+  opacity: 74%;
 `;
 const SkillsCategoryLabel = styled.div`
   font-family: "Helvetica Neue Bold";
@@ -972,7 +972,7 @@ const SoftwareDeveloperText = styled.div`
   font-family: "Helvetica Neue";
   font-size: 0.8em;
   font-weight: 400;
-  opacity: 60%;
+  opacity: 74%;
 `;
 const IntroContainer = styled.div`
   padding: 50px 100px;
@@ -1037,7 +1037,7 @@ const IntroContact = styled.h2`
   }
 `;
 const SecondaryText = styled.span`
-  opacity: 60%;
+  opacity: 74%;
 `;
 const Intro = styled.header`
   display: flex;

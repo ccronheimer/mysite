@@ -5,7 +5,7 @@ const DayNightToggle = ({ themeToggler }) => {
 
     return (
         <label className="switch">
-            <input type="checkbox" onClick={themeToggler}/>
+            <input type="checkbox" onClick={themeToggler} checked/>
             <span className="slider round"/>
         </label>
     )

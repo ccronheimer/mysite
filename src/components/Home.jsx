@@ -24,11 +24,10 @@ import {
 } from "react-icons/fa";
 /* Futura, Helvetica */
 const Home = () => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const themeToggler = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
-        console.log("clicked");
     }
 
   return (
@@ -542,7 +541,6 @@ align-items: center;
 `;
 const BoldLink = styled.a`
   text-decoration: none;
-  color: white;
   font-family: "Helvetica Neue Bold";
   display: inline-block;
   position: relative;
@@ -613,7 +611,6 @@ const Top = styled.div`
 const FooterCopyRight = styled.div`
   width: 300px;
   font-family: "SF Mono Bold";
-  color: #f5f5f7;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
   box-sizing: border-box;
@@ -662,12 +659,10 @@ const ProjectDescription = styled.p`
   line-height: 1.5;
   opacity: 60%;
   font-family: "Helvetica Neue";
-  color: white;
 `;
 
 const ProjectName = styled.div`
   font-family: "Helvetica Neue Bold";
-  color: white;
   font-size: 1.1em;
   display: block;
   @media screen and (max-width: 630px) {
@@ -700,28 +695,7 @@ const OtherProjects = styled.section`
     padding: 50px 35px;
   }
 `;
-const MoreProjectName = styled.a`
-   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  font-family: "Helvetica Neue Bold";
-  display: block;
-  background-color: transparent;
-  white-space: nowrap;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  margin-bottom: 10px;
-  padding-right: 30px;
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-    display: block;
-    font-size: 1em;
-  }
-  &:hover {
-    padding-right: 40px;
-  }
-`;
+
 const ProjectCaption = styled.figcaption`
   display: block;
   width: 200px;
@@ -801,7 +775,6 @@ const ArrowLink = styled.a`
   white-space: nowrap;
   font-size: 1.2rem;
   text-decoration: none;
-  color: white;
   position: relative;
   
   padding-right: 30px;
@@ -826,7 +799,6 @@ const JobTime = styled.div`
   font-size: 0.85rem;
   font-family: "SF Mono Bold";
   margin-top: 5px;
-  color: white;
   opacity: 60%;
   @media screen and (max-width: 480px) {
     font-size: 0.7rem;
@@ -835,7 +807,6 @@ const JobTime = styled.div`
 const JobCompany = styled.div`
   text-decoration: none;
   font-size: 1.1rem;
-  color: white;
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
@@ -884,12 +855,10 @@ const SkillsCategoryItem = styled.li`
   text-align: -webkit-match-parent;
   margin: 3px 0;
   font-size: 0.9rem;
-  color: white;
   opacity: 60%;
 `;
 const SkillsCategoryLabel = styled.div`
   font-family: "Helvetica Neue Bold";
-  color: white;
   text-transform: uppercase;
 `;
 const SkillsCategory = styled.div`
@@ -938,7 +907,6 @@ const SectionContent = styled.div`
   width: 100%;
   max-width: 650px;
   font-family: "Helvetica Neue";
-  color: white;
   word-wrap: break-word;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox */
@@ -1034,7 +1002,6 @@ const Email = styled.a`
   -webkit-box-shadow: inset 0px -4px 0 #057bf7;
   box-shadow: inset 0px -4px 0px #057bf7;
   padding-bottom: 4px;
-  color: white;
   font-family: "SF Mono Bold";
   &:hover {
     box-shadow: inset 0 -40px 0 0 #057bf7;
@@ -1045,7 +1012,7 @@ const IntroTagLine = styled.h1`
   max-width: 700px;
   display: block;
   font-size: 2.3em;
-  color: white;
+  
   line-height: 1.5;
   font-family: "Helvetica Neue Bold";
   @media screen and (max-width: 1024px) {
@@ -1063,7 +1030,6 @@ const IntroContact = styled.h2`
   font-size: 1.25rem;
   display: block;
   font-weight: 400;
-  color: white;
   line-height: 1.5;
   font-family: "Helvetica Neue";
   @media screen and (max-width: 550px) {

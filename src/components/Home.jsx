@@ -30,6 +30,7 @@ const Home = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
     }
 
+
   return (
 
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
@@ -93,7 +94,6 @@ const Home = () => {
                 <SkillsCategoryItem>Java</SkillsCategoryItem>
                 <SkillsCategoryItem>C#</SkillsCategoryItem>
                 <SkillsCategoryItem>Python</SkillsCategoryItem>
-                <SkillsCategoryItem>SQL</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
             <SkillsCategory>
@@ -110,7 +110,6 @@ const Home = () => {
                 <SkillsCategoryItem>React-Native</SkillsCategoryItem>
                 <SkillsCategoryItem>SwiftUI</SkillsCategoryItem>
                 <SkillsCategoryItem>Express</SkillsCategoryItem>
-                <SkillsCategoryItem>Styled Components</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
             <SkillsCategory>
@@ -143,7 +142,6 @@ const Home = () => {
               >
                 <SkillsCategoryItem>Figma</SkillsCategoryItem>
                 <SkillsCategoryItem>Blender</SkillsCategoryItem>
-                <SkillsCategoryItem>draw.io</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
           </Skills>
@@ -550,16 +548,16 @@ const BoldLink = styled.a`
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 2.5px;
   bottom: 0;
   left: 0;
   background-color: #057bf7;
-  transform-origin: bottom right;
+  transform-origin: top;
   transition: transform 0.25s ease-out;
 }
  :hover:after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: bottom ;
 }
 `;
 const FooterLink = styled.a`

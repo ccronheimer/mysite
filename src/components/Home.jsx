@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import NavBar from "./NavBar";
-import Projects from "./Projects";
 
 import BoardLifeVid from "../video/BoardLifeNew.mp4";
 import ColoringAsmrVid from "../video/ColoringASMR.mp4";
@@ -16,8 +15,6 @@ import { lightTheme, darkTheme, GlobalStyles } from "../themes.jsx";
 import {
   FaArrowRight,
   FaGithub,
-  FaInstagram,
-  FaFacebook,
   FaLinkedin,
   FaApple,
   FaAndroid,
@@ -156,12 +153,12 @@ const Home = () => {
               <TimePlace>
                 <JobCompany>
                   <BoldLink href="https://galacticthumb.com/">
-                    Galatic Thumb
+                    Galactic Thumb
                   </BoldLink>
                 </JobCompany>
                 <JobTime>May 2019 - June 2020</JobTime>
               </TimePlace>
-              <JobPosition>Software Engineer</JobPosition>
+              <JobPosition>Software Developer</JobPosition>
             </Job>
           </Jobs>
           <ArrowLink href={Resume} target="_blank" rel="noopener noreferrer">
@@ -200,8 +197,8 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>Sus Adventure</ProjectName>
               <FeaturedProjectDescription>
-                A relaxing Coloring ASMR app I made with Unity and C#, currently
-                live on the PlayStore and AppStore.
+                A funny game I made with Unity and C#.
+                Currently live on the AppStore and PlayStore with over 100 000+ installs.
               </FeaturedProjectDescription>
               <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
@@ -264,7 +261,7 @@ const Home = () => {
               <ProjectName>Board Life</ProjectName>
               <FeaturedProjectDescription>
                 A physics balance board game I made with Unity and C#, currently
-                live on the PlayStore and AppStore.
+                live on the AppStore.
               </FeaturedProjectDescription>
               
               <ProjectLinks>
@@ -292,8 +289,8 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>Bullet City</ProjectName>
               <FeaturedProjectDescription>
-                A physics balance board game I made with Unity and C#, currently
-                live on the PlayStore and AppStore.
+                A shooter puzzle game I developed for Galactic Thumb, made with Unity and C#. Currently
+                live on the AppStore.
               </FeaturedProjectDescription>
               <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/bullet-city/id1460269119" target="_blank" rel="noopener noreferrer"> 
@@ -327,7 +324,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-             Trained and designed a feed-forward neural network in Java for COSC 3P71 intro to AI. The network uses backpropagation to detect odd parity bits.
+             Designed a feed-forward neural network in Java that uses backpropagation to detect parity bits in a set of 4 bit strings.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Java</TechItem>
@@ -335,7 +332,7 @@ const Home = () => {
           </Project>
           <Project>
           <ArrowLink href="https://github.com/ccronheimer/UnityiOSAndroidRatingRequest" target="_blank" rel="noopener noreferrer">
-            Unity iOS | Android rating request {" "}
+            Unity iOS and Android Rating Request {" "}
             <FaArrowRight
               style={{
                 textAlign: "center",
@@ -349,7 +346,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              A univeral script to request a rating from your users that works on Android and iOS devices with one line.
+              A universal script to request a rating from your users on Android and iOS devices with one line.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Unity</TechItem>
@@ -357,7 +354,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/UnityiOSLeaderboard" target="_blank" rel="noopener noreferrer">
             Unity iOS Leaderboard{" "}
             <FaArrowRight
               style={{
@@ -372,7 +369,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Simple integration of a iOS leaderboard to work in your Unity app.
+              Simple integration of a iOS leaderboard for your Unity app.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Unity</TechItem>
@@ -395,8 +392,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              Developed a genetic algorithm that sorts columns of shredded text to its original text.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Java</TechItem>
@@ -418,17 +414,17 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              My personal website I made to showcase my projects.
+              My personal website I developed to showcase my projects.
             </ProjectDescription>
             <TechUsed>
               <TechItem>JavaScript</TechItem>
               <TechItem>React</TechItem>
-              <TechItem>Styled Components</TechItem>
+              <TechItem>CSS</TechItem>
             </TechUsed>
           </Project>
           <Project>
           <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
-            Isometric Graph Maze{" "}
+            Redirect Link {" "}
             <FaArrowRight
               style={{
                 textAlign: "center",
@@ -442,11 +438,10 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              A small script to redirect users to the AppStore or PlayStore based on the users mobile device.
             </ProjectDescription>
             <TechUsed>
-              <TechItem>Java</TechItem>
+              <TechItem>Javascript</TechItem>
             </TechUsed>
           </Project>
           <Project>
@@ -465,7 +460,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              A Instagram bot that likes posts under a select hashtag to boost direct traffic back to an account.
+              A Instagram bot that automates liking posts under a hashtag to help direct traffic back to an account.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Python</TechItem>
@@ -487,8 +482,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-              Small React project created during an interview process to browse
-              and search surf videos via the YouTube API.
+              A script that reads a 2d image and generates a 3d map of that image. I developed this script to use in my Coloring ASMR app to read and turn 2d pixel images into 3d.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Unity</TechItem>
@@ -657,14 +651,18 @@ const ProjectDescription = styled.p`
   line-height: 1.5;
   opacity: 82%;
   font-family: "Helvetica Neue";
+  font-size: 1.1rem;
+
+
 `;
 
 const ProjectName = styled.div`
   font-family: "Helvetica Neue Bold";
   font-size: 1.1em;
   display: block;
+  padding-bottom: 10px;
   @media screen and (max-width: 630px) {
-    margin-bottom: 10px;
+    
     font-size: 1em;
   }
 `;
@@ -716,6 +714,7 @@ const FeaturedProjectDescription = styled.p`
   margin-bottom: 25px;
   font-family: "Helvetica Neue";
   opacity: 82%;
+  font-size: 1.1rem;
 `;
 const ProjectPic = styled.video`
   @media screen and (max-width: 768px) {
@@ -786,7 +785,7 @@ const ArrowLink = styled.a`
  
 `;
 const JobPosition = styled.div`
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Helvetica Neue";
   opacity: 82%;
   @media screen and (max-width: 480px) {
@@ -852,7 +851,7 @@ const SkillsCategoryItem = styled.li`
   display: list-item;
   text-align: -webkit-match-parent;
   margin: 3px 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 82%;
 `;
 const SkillsCategoryLabel = styled.div`
@@ -901,7 +900,7 @@ const SectionSkills = styled.section`
 `;
 const SectionContent = styled.div`
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 100%;
   max-width: 650px;
   font-family: "Helvetica Neue";

@@ -20,6 +20,8 @@ body {
 
 a {
     color: ${(props) => props.theme.fontColor};
+    transition: 0.25s;
+
 }
 
 *{

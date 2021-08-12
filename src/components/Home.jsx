@@ -652,7 +652,9 @@ const ProjectDescription = styled.p`
   opacity: 82%;
   font-family: "Helvetica Neue";
   font-size: 1.1rem;
-
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 
 `;
 
@@ -715,6 +717,11 @@ const FeaturedProjectDescription = styled.p`
   font-family: "Helvetica Neue";
   opacity: 82%;
   font-size: 1.1rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+
+  }
 `;
 const ProjectPic = styled.video`
   @media screen and (max-width: 768px) {
@@ -852,6 +859,11 @@ const SkillsCategoryItem = styled.li`
   text-align: -webkit-match-parent;
   margin: 3px 0;
   font-size: 1rem;
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+
+  }
+
   opacity: 82%;
 `;
 const SkillsCategoryLabel = styled.div`
@@ -918,6 +930,8 @@ const SectionContent = styled.div`
     
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1rem;
+
   }
 `;
 const SectionTitle = styled.div`

@@ -377,7 +377,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/SentenceSolverGA" target="_blank" rel="noopener noreferrer">
             Genetic Algorithm{" "}
             <FaArrowRight
               style={{
@@ -420,28 +420,6 @@ const Home = () => {
               <TechItem>JavaScript</TechItem>
               <TechItem>React</TechItem>
               <TechItem>CSS</TechItem>
-            </TechUsed>
-          </Project>
-          <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
-            Redirect Link {" "}
-            <FaArrowRight
-              style={{
-                textAlign: "center",
-                verticalAlign: "middle",
-                color: "#057bf7",
-                position: "absolute",
-                right: "0px",
-                top: "5px",
-                
-              }}
-            />
-            </ArrowLink>
-            <ProjectDescription>
-              A small script to redirect users to the AppStore or PlayStore based on the users mobile device.
-            </ProjectDescription>
-            <TechUsed>
-              <TechItem>Javascript</TechItem>
             </TechUsed>
           </Project>
           <Project>

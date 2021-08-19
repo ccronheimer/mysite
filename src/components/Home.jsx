@@ -127,6 +127,7 @@ const Home = () => {
                 <SkillsCategoryItem>Node</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
+            { /*
             <SkillsCategory>
               <SkillsCategoryLabel>Design</SkillsCategoryLabel>
               <ul
@@ -141,6 +142,7 @@ const Home = () => {
                 <SkillsCategoryItem>Blender</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
+            */}
           </Skills>
         </SectionContent>
       </SectionSkills>
@@ -445,7 +447,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/2Dto3DMapUnity" target="_blank" rel="noopener noreferrer">
             Unity 3d Map Generator{" "}
             <FaArrowRight
               style={{

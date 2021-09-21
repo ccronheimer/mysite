@@ -67,7 +67,7 @@ const Home = () => {
             Brock University
           </BoldLink>
           <SecondaryText>
-            . I am looking for a software developer internship for spring 2022.
+            . I have been developing applications and tools with Unity for 5+ years. I am currently building solutions with AI.
           </SecondaryText>
         </SectionContent>
       </SectionBackground>
@@ -107,6 +107,7 @@ const Home = () => {
                 <SkillsCategoryItem>React-Native</SkillsCategoryItem>
                 <SkillsCategoryItem>SwiftUI</SkillsCategoryItem>
                 <SkillsCategoryItem>Express</SkillsCategoryItem>
+                <SkillsCategoryItem>OpenGL</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
             <SkillsCategory>
@@ -424,7 +425,7 @@ const Home = () => {
               <TechItem>CSS</TechItem>
             </TechUsed>
           </Project>
-          <Project>
+          {/* <Project>
           <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Instagram Liking Bot{" "}
             <FaArrowRight
@@ -445,7 +446,7 @@ const Home = () => {
             <TechUsed>
               <TechItem>Python</TechItem>
             </TechUsed>
-          </Project>
+          </Project> */}
           <Project>
           <ArrowLink href="https://github.com/ccronheimer/2Dto3DMapUnity" target="_blank" rel="noopener noreferrer">
             Unity 3d Map Generator{" "}

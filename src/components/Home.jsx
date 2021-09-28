@@ -67,7 +67,7 @@ const Home = () => {
             Brock University
           </BoldLink>
           <SecondaryText>
-            . I have been developing applications and tools with Unity for 5+ years. I am currently building solutions with AI.
+            . I have been developing applications and tools for 5+ years. I am currently building solutions with AI.
           </SecondaryText>
         </SectionContent>
       </SectionBackground>

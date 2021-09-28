@@ -7,6 +7,8 @@ import BoardLifeVid from "../video/BoardLifeNew.mp4";
 import ColoringAsmrVid from "../video/ColoringASMR.mp4";
 import SpermGameVid from "../video/SpermGame.mp4";
 import BulletCityVid from "../video/BulletCity.mp4";
+import CoinHawkVid from "../video/CoinHawk.mp4";
+
 import Resume from "./resume.pdf";
 
 import { lightTheme, darkTheme, GlobalStyles } from "../themes.jsx";
@@ -183,7 +185,36 @@ const Home = () => {
       <FeaturedProjects id="projects">
         <SectionTitle>Featured Projects</SectionTitle>
         <SectionContent>
+        <Project1>
+            <ProjectPic
+              width="250"
+              controls={false}
+              autoPlay
+              muted
+              loop
+              playsInline
+              
+            >
+              <source src={CoinHawkVid} type="video/mp4" />
+            </ProjectPic>
 
+            <ProjectCaption>
+              <ProjectName>CoinHawk</ProjectName>
+              <FeaturedProjectDescription>
+                A project I am currently working on with react-native and d3.js that fetches crypto data. CoinHawk will be available for iOS and Android soon. 
+              </FeaturedProjectDescription>
+              {/* <ProjectLinks>
+              <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
+              <FaApple/>
+
+              </IconLink>
+              <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
+              <FaAndroid/>
+              </IconLink>
+
+              </ProjectLinks> */}
+            </ProjectCaption>
+          </Project1>
         <Project1>
             <ProjectPic
               width="250"

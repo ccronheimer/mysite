@@ -456,6 +456,29 @@ const Home = () => {
               <TechItem>CSS</TechItem>
             </TechUsed>
           </Project>
+          <Project>
+          <ArrowLink href="https://github.com/ccronheimer/ElementaryCellularAutomaton" target="_blank" rel="noopener noreferrer">
+            Elementary Cellular Automata{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            Designed an elementary cellular automaton in OpenGL with C. The program has a monochrome and colored component to express the cells that are constrained by custom rules.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Unity</TechItem>
+              <TechItem>C#</TechItem>
+            </TechUsed>
+          </Project>
           {/* <Project>
           <ArrowLink href="#" target="_blank" rel="noopener noreferrer">
             Instagram Liking Bot{" "}

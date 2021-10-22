@@ -475,8 +475,8 @@ const Home = () => {
             Designed an elementary cellular automaton in OpenGL with C. The program has a monochrome and colored component to express the cells that are constrained by custom rules.
             </ProjectDescription>
             <TechUsed>
-              <TechItem>Unity</TechItem>
-              <TechItem>C#</TechItem>
+              <TechItem>OpenGL</TechItem>
+              <TechItem>C</TechItem>
             </TechUsed>
           </Project>
           {/* <Project>

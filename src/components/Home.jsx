@@ -69,12 +69,12 @@ const Home = () => {
             Brock University
           </BoldLink>
           <SecondaryText>
-            . I have been developing applications and tools for 5+ years. I am currently building solutions with AI.
+            .I have been developing applications and tools for 5+ years.
           </SecondaryText>
         </SectionContent>
       </SectionBackground>
 
-      <SectionSkills>
+      {/* <SectionSkills>
         <SectionTitle>Skills</SectionTitle>
         <SectionContent>
           <Skills>
@@ -130,25 +130,9 @@ const Home = () => {
                 <SkillsCategoryItem>Node</SkillsCategoryItem>
               </ul>
             </SkillsCategory>
-            { /*
-            <SkillsCategory>
-              <SkillsCategoryLabel>Design</SkillsCategoryLabel>
-              <ul
-                style={{
-                  listStyleType: "none",
-                  padding: "0",
-                  margin: "0",
-                  lineHeight: "1.5",
-                }}
-              >
-                <SkillsCategoryItem>Figma</SkillsCategoryItem>
-                <SkillsCategoryItem>Blender</SkillsCategoryItem>
-              </ul>
-            </SkillsCategory>
-            */}
           </Skills>
         </SectionContent>
-      </SectionSkills>
+      </SectionSkills> */}
 
       <SectionExperience>
         <SectionTitle>Experience</SectionTitle>
@@ -161,7 +145,7 @@ const Home = () => {
                     Galactic Thumb
                   </BoldLink>
                 </JobCompany>
-                <JobTime>May 2019 - June 2020</JobTime>
+                <JobTime>April 2019 - September 2020</JobTime>
               </TimePlace>
               <JobPosition>Software Developer</JobPosition>
             </Job>
@@ -201,7 +185,7 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>CoinHawk</ProjectName>
               <FeaturedProjectDescription>
-                A project I am currently working on with react-native and d3.js that fetches crypto data. CoinHawk will be available for iOS and Android soon. 
+               A cryptocurrency app that watches and displays live market data. Built with react-native for iOS and Android. Used d3.js to display data in styled graphs.
               </FeaturedProjectDescription>
               {/* <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
@@ -231,7 +215,7 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>Sus Adventure</ProjectName>
               <FeaturedProjectDescription>
-                A funny game I made with Unity and C#.
+                A game I developed with Unity.
                 Currently live on the AppStore and PlayStore with over 100 000+ installs.
               </FeaturedProjectDescription>
               <ProjectLinks>
@@ -342,6 +326,30 @@ const Home = () => {
       <OtherProjects>
         <SectionTitle>More Projects</SectionTitle>
         <SectionContent>
+        
+        <Project>
+          <ArrowLink href="https://github.com/ccronheimer/ParticleCannon" target="_blank" rel="noopener noreferrer">
+            Particle Cannon{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+             Developed a particle cannon that simulates physics in a simulated enviroment.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>C++</TechItem>
+              <TechItem>OpenGL</TechItem>
+            </TechUsed>
+          </Project>
           <Project>
           <ArrowLink href="https://github.com/ccronheimer/NeuralNetwork" target="_blank" rel="noopener noreferrer">
             Neural Network{" "}
@@ -410,6 +418,30 @@ const Home = () => {
               <TechItem>C#</TechItem>
             </TechUsed>
           </Project>
+          <Project>
+          <ArrowLink href="https://github.com/ccronheimer/ParticleCannon" target="_blank" rel="noopener noreferrer">
+            Event Planner App{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+             Designed a 
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Java</TechItem>
+              <TechItem>Android Studio</TechItem>
+            </TechUsed>
+          </Project>
+          <Project></Project>
           <Project>
           <ArrowLink href="https://github.com/ccronheimer/SentenceSolverGA" target="_blank" rel="noopener noreferrer">
             Genetic Algorithm{" "}

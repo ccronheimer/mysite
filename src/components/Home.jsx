@@ -145,7 +145,7 @@ const Home = () => {
                     Galactic Thumb
                   </BoldLink>
                 </JobCompany>
-                <JobTime>April 2019 - September 2020</JobTime>
+                <JobTime>Apr 2019 - Sep 2020</JobTime>
               </TimePlace>
               <JobPosition>Software Developer</JobPosition>
             </Job>
@@ -216,7 +216,7 @@ const Home = () => {
               <ProjectName>Sus Adventure</ProjectName>
               <FeaturedProjectDescription>
                 A game I developed with Unity.
-                Currently live on the AppStore and PlayStore with <br/>over 100 000+ installs.
+                Currently live on the AppStore and PlayStore with <br/>over 100,000+ installs.
               </FeaturedProjectDescription>
               <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
@@ -247,8 +247,7 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>Coloring ASMR </ProjectName>
               <FeaturedProjectDescription>
-                A relaxing Coloring ASMR app I made with Unity and C#, currently
-                live on the PlayStore and AppStore.
+                A relaxing Coloring ASMR app I made with Unity and C#. Currently live on the AppStore and PlayStore.
               </FeaturedProjectDescription>
               <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/coloring-asmr/id1522171988" target="_blank" rel="noopener noreferrer"> 
@@ -278,8 +277,7 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>Board Life</ProjectName>
               <FeaturedProjectDescription>
-                A physics balance board game I made with Unity and C#, currently
-                live on the AppStore.
+                A physics balance board game I made with Unity and C#. Currently live on the AppStore and PlayStore.
               </FeaturedProjectDescription>
               
               <ProjectLinks>

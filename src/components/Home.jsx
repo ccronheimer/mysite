@@ -191,7 +191,7 @@ const Home = () => {
               <IconLink href="https://github.com/ccronheimer/CoinHawkNative" target="_blank" rel="noopener noreferrer"> 
               <FaGithub/>
               </IconLink>
-              
+
               {/* <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
               <FaAndroid/>
               </IconLink> */}
@@ -216,7 +216,7 @@ const Home = () => {
               <ProjectName>Sus Adventure</ProjectName>
               <FeaturedProjectDescription>
                 A game I developed with Unity.
-                Currently live on the AppStore and PlayStore with over 100 000+ installs.
+                Currently live on the AppStore and PlayStore with <br/>over 100 000+ installs.
               </FeaturedProjectDescription>
               <ProjectLinks>
               <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 

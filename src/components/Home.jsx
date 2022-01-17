@@ -343,7 +343,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-             Developed a particle cannon that simulates physics in a simulated enviroment.
+             Developed a simulated enviroment that shoots particles that simulates physics.
             </ProjectDescription>
             <TechUsed>
               <TechItem>C++</TechItem>
@@ -419,7 +419,7 @@ const Home = () => {
             </TechUsed>
           </Project>
           <Project>
-          <ArrowLink href="https://github.com/ccronheimer/ParticleCannon" target="_blank" rel="noopener noreferrer">
+          <ArrowLink href="https://github.com/ccronheimer/SimpleEventApp" target="_blank" rel="noopener noreferrer">
             Event Planner App{" "}
             <FaArrowRight
               style={{
@@ -434,7 +434,7 @@ const Home = () => {
             />
             </ArrowLink>
             <ProjectDescription>
-             Designed a 
+             Designed and developed a simple event planner that stores events in a realm db.
             </ProjectDescription>
             <TechUsed>
               <TechItem>Java</TechItem>

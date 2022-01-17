@@ -185,18 +185,18 @@ const Home = () => {
             <ProjectCaption>
               <ProjectName>CoinHawk</ProjectName>
               <FeaturedProjectDescription>
-               A cryptocurrency app that watches and displays live market data. Built with react-native for iOS and Android. Used d3.js to display data in styled graphs.
+               A cryptocurrency app that watches and displays live market data. Built with react-native for iOS and Android. Used d3.js to display data in styled graphs. Data is pulled from CoinGecko's crypto API.
               </FeaturedProjectDescription>
-              {/* <ProjectLinks>
-              <IconLink href="https://apps.apple.com/us/app/sus-adventure-2/id1564807026" target="_blank" rel="noopener noreferrer"> 
-              <FaApple/>
-
+              <ProjectLinks>
+              <IconLink href="https://github.com/ccronheimer/CoinHawkNative" target="_blank" rel="noopener noreferrer"> 
+              <FaGithub/>
               </IconLink>
-              <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
+              
+              {/* <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
               <FaAndroid/>
-              </IconLink>
+              </IconLink> */}
 
-              </ProjectLinks> */}
+              </ProjectLinks>
             </ProjectCaption>
           </Project1>
         <Project1>

@@ -51,7 +51,7 @@ const Home = () => {
           </IntroContact>
         </Intro>
       </IntroContainer>
-      <SectionBackground>
+      {/* <SectionBackground>
         <SectionTitle>Background</SectionTitle>
         <SectionContent>
           <SecondaryText>I am currently studying </SecondaryText>
@@ -72,7 +72,7 @@ const Home = () => {
             .I have been developing applications and tools for 5+ years.
           </SecondaryText>
         </SectionContent>
-      </SectionBackground>
+      </SectionBackground> */}
 
       {/* <SectionSkills>
         <SectionTitle>Skills</SectionTitle>
@@ -134,7 +134,7 @@ const Home = () => {
         </SectionContent>
       </SectionSkills> */}
 
-      <SectionExperience>
+      {/* <SectionExperience>
         <SectionTitle>Experience</SectionTitle>
         <SectionContent>
           <Jobs>
@@ -165,8 +165,8 @@ const Home = () => {
             />
           </ArrowLink>
         </SectionContent>
-      </SectionExperience>
-      <FeaturedProjects id="projects">
+      </SectionExperience> */}
+      {/* <FeaturedProjects id="projects">
         <SectionTitle>Featured Projects</SectionTitle>
         <SectionContent>
         <Project1>
@@ -191,11 +191,6 @@ const Home = () => {
               <IconLink href="https://github.com/ccronheimer/CoinHawkNative" target="_blank" rel="noopener noreferrer"> 
               <FaGithub/>
               </IconLink>
-
-              {/* <IconLink href="https://play.google.com/store/apps/details?id=com.cameroncronheimer.susadventure" target="_blank" rel="noopener noreferrer">
-              <FaAndroid/>
-              </IconLink> */}
-
               </ProjectLinks>
             </ProjectCaption>
           </Project1>
@@ -320,9 +315,9 @@ const Home = () => {
           </Project1>
 
         </SectionContent>
-      </FeaturedProjects>
+      </FeaturedProjects> */}
       <OtherProjects>
-        <SectionTitle>More Projects</SectionTitle>
+        <SectionTitle>Projects</SectionTitle>
         <SectionContent>
         
         <Project>

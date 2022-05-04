@@ -34,15 +34,15 @@ const Home = () => {
 
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
      <GlobalStyles />
-      <NavBar themeToggler={themeToggler}/>
+      {/* <NavBar themeToggler={themeToggler}/> */}
 
       <IntroContainer>
         <Intro>
-          <IntroTagLine>
+          {/* <IntroTagLine>
             Cameron Cronheimer
             <br />
             <SoftwareDeveloperText>Software Developer</SoftwareDeveloperText>
-          </IntroTagLine>
+          </IntroTagLine> */}
           <IntroContact>
             <SecondaryText>Get in touch</SecondaryText> 👉{" "}
             <Email href="mailto:cameroncronheimer@gmail.com">
@@ -319,7 +319,149 @@ const Home = () => {
       <OtherProjects>
         <SectionTitle>Projects</SectionTitle>
         <SectionContent>
-        
+        <Project>
+          <ArrowLink href="https://codemates.ca/code/799cfd8a-6d23-4271-bda4-5b123f4c3d73" target="_blank" rel="noopener noreferrer">
+            Codemates{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            A free live collabrative code editor friends can share and edit code together.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>React</TechItem>
+              <TechItem>Node</TechItem>
+              <TechItem>Express</TechItem>
+              <TechItem>Docker</TechItem>
+              <TechItem>PostreSQL</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
+          <ArrowLink href="https://ccronheimer.github.io/BrockChatbot/" target="_blank" rel="noopener noreferrer">
+            Canada Summer Games Chat Bot{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            A chat bot for the 2022 canada summer games.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>React</TechItem>
+              <TechItem>Node</TechItem>
+              <TechItem>Express</TechItem>
+              <TechItem>MongoDB</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
+          <ArrowLink href="https://github.com/ccronheimer/CoinHawkNative" target="_blank" rel="noopener noreferrer">
+            Coin Hawk{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            A cryptocurrency tracker project with interactive graphs and live data.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>React Native</TechItem>
+              <TechItem>JavaScript</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
+          <ArrowLink href="https://apps.apple.com/sr/app/coloring-asmr/id1522171988?platform=iphone" target="_blank" rel="noopener noreferrer">
+            Coloring ASMR{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            A coloring simulation app currently live on the AppStore and Google PlayStore.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>C#</TechItem>
+              <TechItem>Unity</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
+          <ArrowLink href="https://apps.apple.com/us/app/bullet-city/id1460269119" target="_blank" rel="noopener noreferrer">
+            Bullet City{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+            A shooter puzzle game I developed for Galactic Thumb, currently live on the AppStore.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>C#</TechItem>
+              <TechItem>Unity</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
+          <ArrowLink href="https://apps.apple.com/sr/app/board-life/id1444221598?platform=iphone" target="_blank" rel="noopener noreferrer">
+            Board Life{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+             A physics balance board game, that is currently live on the AppStore.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>C#</TechItem>
+              <TechItem>Unity</TechItem>
+            </TechUsed>
+          </Project>
         <Project>
           <ArrowLink href="https://github.com/ccronheimer/ParticleCannon" target="_blank" rel="noopener noreferrer">
             Particle Cannon{" "}
@@ -1048,7 +1190,7 @@ const SoftwareDeveloperText = styled.div`
 `;
 const IntroContainer = styled.div`
   padding: 50px 100px;
-  height: 60vh; /* vh means 60% viewable height */
+   /* vh means 60% viewable height */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1104,6 +1246,7 @@ const IntroContact = styled.h2`
   font-weight: 400;
   line-height: 1.5;
   font-family: "Helvetica Neue";
+  
   @media screen and (max-width: 550px) {
     font-size: 1rem;
   }
@@ -1115,5 +1258,7 @@ const Intro = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 40vh;
+  height: 10vh;
+  text-align: center;
+
 `;

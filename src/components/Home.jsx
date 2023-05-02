@@ -320,6 +320,28 @@ const Home = () => {
         <SectionTitle>Projects</SectionTitle>
         <SectionContent>
         <Project>
+          <ArrowLink href="https://www.youtube.com/watch?v=8ACFHaqFfXw" target="_blank" rel="noopener noreferrer">
+            Rolling Acres Golf Course{" "}
+            <FaArrowRight
+              style={{
+                textAlign: "center",
+                verticalAlign: "middle",
+                color: "#057bf7",
+                position: "absolute",
+                right: "0px",
+                top: "5px",
+                
+              }}
+            />
+            </ArrowLink>
+            <ProjectDescription>
+             A 1 to 1 remake of Rolling Acres Golf Course in Unity for GSPRO golf simulators.
+            </ProjectDescription>
+            <TechUsed>
+              <TechItem>Unity</TechItem>
+            </TechUsed>
+          </Project>
+        <Project>
           <ArrowLink href="https://codemates.ca/code/799cfd8a-6d23-4271-bda4-5b123f4c3d73" target="_blank" rel="noopener noreferrer">
             Codemates{" "}
             <FaArrowRight
